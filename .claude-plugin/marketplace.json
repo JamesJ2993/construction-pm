@@ -1,0 +1,18 @@
+{
+  "name": "construction-pm",
+  "owner": {
+    "name": "JamesJ2993"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for construction and fit-out project management."
+  },
+  "plugins": [
+    {
+      "name": "project-manager",
+      "source": "./plugins/project-manager",
+      "description": "Project Manager agent for construction and fit-out projects — drawing intake, clarifications registers, documentation health, programme and cost, live dashboard and owner sign-offs.",
+      "version": "2.0.1",
+      "category": "productivity"
+    }
+  ]
+}
