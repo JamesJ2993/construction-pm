@@ -73,3 +73,8 @@ Each project's state folder holds two notes files:
 
 Both are read at the start of every run. The plugin's own files are never edited by the agent, so
 updating the plugin never loses them.
+
+## Setup and support
+
+Free to use under the MIT licence. Paid setup, customisation and support for firms are available
+through Invero Projects: see [SUPPORT.md](../../SUPPORT.md) or email james@inveroprojects.com.au.
