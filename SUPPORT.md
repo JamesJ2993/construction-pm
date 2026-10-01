@@ -9,7 +9,7 @@ Don't attach client drawings, registers or other project documents. Issues are p
 ## Paid
 
 Setup, customisation and ongoing support for construction and fit-out firms are available through
-Invero Projects.
+[Invero Projects](https://inveroprojects.com.au).
 
 Setup covers registering your projects, matching the config to your folder structure and drawing
 stages, and a first scan walked through with your PM.

@@ -28,7 +28,7 @@ Then ask Claude to "set up the PM on <your project folder>".
 The plugin is free to use under the MIT licence.
 
 Paid setup, customisation and support are available for construction and fit-out firms through
-Invero Projects.
+[Invero Projects](https://inveroprojects.com.au).
 
 | Service | What it covers |
 |---|---|
