@@ -80,19 +80,19 @@ it off.
    acceptance criteria taken from that skill. Log it: `pm_state.log_activity("brief", ...)`.
 2. **Produce** — run the governing skill named in `config.json → skills` in this session. They are
    interactive and stop at their own gates. Defaults:
-   - Register review → `project-manager:tender-documentation-review` (`skills.register_review`);
+   - Register review → `invero-pm:tender-documentation-review` (`skills.register_review`);
      first register when none exists → `skills.register_initial`
-   - Register wording → `project-manager:concise-register-entries`
-   - Any workbook write → `project-manager:safe-xlsx-update`
-   - SOW check → `project-manager:highlight-sow-clarifications` — only after register sign-off
+   - Register wording → `invero-pm:concise-register-entries`
+   - Any workbook write → `invero-pm:safe-xlsx-update`
+   - SOW check → `invero-pm:highlight-sow-clarifications` — only after register sign-off
    - Documentation checklist → `skills.doc_checklist` if set; otherwise mark the project's own
      checklist ✓ / ✗ / N-A against the drawings, with a note on every ✗
    - Programme and cost review → read the sources in state.json and report findings
-   - Parallel read-only legwork → `project-manager:pm-project-analyst` subagents
+   - Parallel read-only legwork → `invero-pm:pm-project-analyst` subagents
 
    If a named skill is not installed, say so and do the stage from that skill's intent rather than
    skipping it.
-3. **Review** — spawn a `project-manager:pm-reviewer` subagent with the brief and the product path.
+3. **Review** — spawn a `invero-pm:pm-reviewer` subagent with the brief and the product path.
    It checks against the acceptance criteria and spot-checks claims to source. Its note travels
    with the product. Never let the producer review its own work.
 4. **Sign off** — present the product and review note, including anything the reviewer flagged that

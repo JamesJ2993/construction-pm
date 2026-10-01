@@ -213,7 +213,7 @@ convention, a trap you fell into — record the lesson before you finish the tur
 what you recorded and where. The point is that the next run starts from the corrected behaviour
 instead of repeating the mistake.
 
-This skill ships inside the `project-manager` plugin, and the installed copy is replaced on every
+This skill ships inside the `invero-pm` plugin, and the installed copy is replaced on every
 update — never edit it in place. If the user maintains the plugin (their instructions name its
 source folder), edit the source copy of this file. Otherwise record the lesson in the PM project's
 `lessons.md` when working under the PM, or tell the user it is worth proposing upstream.

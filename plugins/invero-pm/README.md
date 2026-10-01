@@ -1,4 +1,4 @@
-# project-manager
+# invero-pm
 
 A Project Manager agent for construction and fit-out projects, for Claude Code.
 
@@ -16,13 +16,13 @@ answer its questions. Stage work runs through a strict loop: **brief → produce
 
 | Component | Name | Does |
 |---|---|---|
-| Skill | `project-manager:project-manager` | The orchestrator: scans, dashboard, stage lifecycle, sign-offs |
-| Skill | `project-manager:tender-documentation-review` | Reviews a multi-discipline tender set against the previous register and produces the next revision |
-| Skill | `project-manager:concise-register-entries` | House style for register, RFI and defects entries |
-| Skill | `project-manager:safe-xlsx-update` | Changes a live workbook without destroying images, rich text or the user's edits |
-| Skill | `project-manager:highlight-sow-clarifications` | Cross-checks register references cited in a Scope of Works (Windows, Word and Excel) |
-| Subagent | `project-manager:pm-reviewer` | Read-only reviewer of a finished stage output |
-| Subagent | `project-manager:pm-project-analyst` | Read-only legwork inside the project folder |
+| Skill | `invero-pm:project-manager` | The orchestrator: scans, dashboard, stage lifecycle, sign-offs |
+| Skill | `invero-pm:tender-documentation-review` | Reviews a multi-discipline tender set against the previous register and produces the next revision |
+| Skill | `invero-pm:concise-register-entries` | House style for register, RFI and defects entries |
+| Skill | `invero-pm:safe-xlsx-update` | Changes a live workbook without destroying images, rich text or the user's edits |
+| Skill | `invero-pm:highlight-sow-clarifications` | Cross-checks register references cited in a Scope of Works (Windows, Word and Excel) |
+| Subagent | `invero-pm:pm-reviewer` | Read-only reviewer of a finished stage output |
+| Subagent | `invero-pm:pm-project-analyst` | Read-only legwork inside the project folder |
 
 ## Requirements
 

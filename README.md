@@ -4,7 +4,7 @@ Claude Code plugins for construction and fit-out project management.
 
 | Plugin | What it does |
 |---|---|
-| [project-manager](plugins/project-manager/README.md) | A PM agent that watches a project folder (drawing issues, clarifications registers, documentation health, programme and cost), runs a live local dashboard and takes each stage through independent review and your sign-off |
+| [invero-pm](plugins/invero-pm/README.md) | A PM agent that watches a project folder (drawing issues, clarifications registers, documentation health, programme and cost), runs a live local dashboard and takes each stage through independent review and your sign-off |
 
 ## Install
 
@@ -12,10 +12,10 @@ In Claude Code:
 
 ```
 /plugin marketplace add JamesJ2993/construction-pm
-/plugin install project-manager@construction-pm
+/plugin install invero-pm@construction-pm
 ```
 
-Then install the Python dependencies (also listed in `plugins/project-manager/requirements.txt`):
+Then install the Python dependencies (also listed in `plugins/invero-pm/requirements.txt`):
 
 ```
 pip install pymupdf openpyxl python-docx pillow
@@ -24,7 +24,7 @@ pip install pymupdf openpyxl python-docx pillow
 Then ask Claude to "set up the PM on <your project folder>".
 
 Example prompts, and a full account of what the plugin reads, writes, runs and sends, are in the
-[plugin README](plugins/project-manager/README.md).
+[plugin README](plugins/invero-pm/README.md).
 
 ## Setup and support
 
@@ -66,13 +66,13 @@ Claude Code runs a cached copy of each plugin and only refreshes it when the ver
 editing, run:
 
 ```
-python refresh.py project-manager
+python refresh.py invero-pm
 ```
 
 It bumps the patch version in `plugin.json` and in `.claude-plugin/marketplace.json`, then updates
 the installed copy. Restart Claude Code or run `/reload-plugins` to pick up the change.
 
-`python package.py project-manager` builds `dist/project-manager-<version>.zip` for uploading to
+`python package.py invero-pm` builds `dist/invero-pm-<version>.zip` for uploading to
 claude.ai (Customize → Plugins → Upload plugin).
 
 ## Licence

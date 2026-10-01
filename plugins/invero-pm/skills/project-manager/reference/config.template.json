@@ -79,11 +79,11 @@
   "stale_ok": [],
 
   "skills": {
-    "register_review": "project-manager:tender-documentation-review",
-    "register_initial": "project-manager:tender-documentation-review",
-    "register_style": "project-manager:concise-register-entries",
-    "workbook_writes": "project-manager:safe-xlsx-update",
-    "sow_check": "project-manager:highlight-sow-clarifications",
+    "register_review": "invero-pm:tender-documentation-review",
+    "register_initial": "invero-pm:tender-documentation-review",
+    "register_style": "invero-pm:concise-register-entries",
+    "workbook_writes": "invero-pm:safe-xlsx-update",
+    "sow_check": "invero-pm:highlight-sow-clarifications",
     "doc_checklist": null,
     "writing_style": null
   },

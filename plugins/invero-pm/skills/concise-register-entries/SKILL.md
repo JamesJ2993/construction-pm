@@ -123,7 +123,7 @@ common set, drop out or box in some Excel configurations. Write `3200 dia.` not 
 
 ## When asked to shorten an existing register
 
-1. Back up and verify the backup loads before touching anything — see `project-manager:safe-xlsx-update`.
+1. Back up and verify the backup loads before touching anything — see `invero-pm:safe-xlsx-update`.
 2. Read the **live** file. The user has probably edited it; condense their text, not your last copy.
 3. Rewrite whole entries. Do not word-tweak.
 4. Diff every cell afterwards and assert **only the Description column changed**.
@@ -136,7 +136,7 @@ convention, a trap you fell into — record the lesson before you finish the tur
 what you recorded and where. The point is that the next run starts from the corrected behaviour
 instead of repeating the mistake.
 
-This skill ships inside the `project-manager` plugin, and the installed copy is replaced on every
+This skill ships inside the `invero-pm` plugin, and the installed copy is replaced on every
 update — never edit it in place. If the user maintains the plugin (their instructions name its
 source folder), edit the source copy of this file. Otherwise record the lesson in the PM project's
 `lessons.md` when working under the PM, or tell the user it is worth proposing upstream.

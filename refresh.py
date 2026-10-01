@@ -4,7 +4,7 @@ Claude Code runs plugins from a copy in ~\.claude\plugins\cache\, and `plugin up
 re-copies when the version changes. So: bump the patch version in plugin.json and the matching
 marketplace.json entry, then refresh the marketplace and the plugin.
 
-    python refresh.py project-manager
+    python refresh.py invero-pm
 
 Restart Claude Code (or /reload-plugins) afterwards.
 """

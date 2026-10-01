@@ -8,10 +8,10 @@
   },
   "plugins": [
     {
-      "name": "project-manager",
-      "source": "./plugins/project-manager",
+      "name": "invero-pm",
+      "source": "./plugins/invero-pm",
       "description": "Project Manager agent for construction and fit-out projects — drawing intake, clarifications registers, documentation health, programme and cost, live dashboard and owner sign-offs.",
-      "version": "2.0.3",
+      "version": "3.0.0",
       "category": "productivity"
     }
   ]

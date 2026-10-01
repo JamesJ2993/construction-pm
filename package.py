@@ -1,6 +1,6 @@
 r"""Zip a plugin for upload to claude.ai (Customize > Plugins > Add > Upload plugin).
 
-    python package.py project-manager
+    python package.py invero-pm
 
 Writes dist\<name>-<version>.zip with .claude-plugin\plugin.json at the top level. Bytecode caches
 are left out. Re-run after refresh.py so the upload carries the same version as the local install.

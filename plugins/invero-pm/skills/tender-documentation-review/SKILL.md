@@ -22,8 +22,8 @@ Confirm the drawing set is **complete**. Services packages routinely lag the arc
 and a half-uploaded set produces a register full of false "not issued" findings. List what arrived,
 by discipline, and ask before reviewing.
 
-Load `project-manager:concise-register-entries` for the writing style and
-`project-manager:safe-xlsx-update` before any workbook write.
+Load `invero-pm:concise-register-entries` for the writing style and
+`invero-pm:safe-xlsx-update` before any workbook write.
 
 ## Step 1 — Index and map
 
