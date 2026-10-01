@@ -36,8 +36,16 @@ Paid setup, customisation and support are available for construction and fit-out
 | Customisation | Your checklists, register format, report layout, cost plan labels and sign-off gates built into the config and skills |
 | Support | Fixes, updates as Claude Code changes, and help when a scan or stage doesn't behave |
 
-Work is quoted per firm. Email james@inveroprojects.com.au with the number of projects and how
-your project folders are set out.
+### Booking and payment
+
+Email james@inveroprojects.com.au to book. Include the number of projects and how your project
+folders are set out.
+
+Each engagement is quoted per firm.
+
+Work is invoiced on acceptance of the quote.
+
+### Free help
 
 For free help, open a GitHub issue. Responses are best effort with no committed turnaround.
 
