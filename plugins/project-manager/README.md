@@ -47,6 +47,17 @@ The default layout expects a `Drawings/` folder with numbered stage subfolders (
 Issue`, `3. Tender Issue`, …), plus `Tender/`, `Finance/` and `Programme/`. Everything is
 configurable; see [skills/project-manager/reference/setup.md](skills/project-manager/reference/setup.md).
 
+## Example prompts
+
+- "Set up the PM on `D:\Projects\Riverside Fit-out`. I'm Sam and I use DD.MM.YYYY dates."
+- "/pm" — scans the project, refreshes the dashboard and reports what changed and what is waiting
+  on you.
+- "What's waiting on me?"
+- "The tender set has landed. Review it against register Rev B and produce Rev C."
+- "Approve the register sign-off: Rev C is fine, note the ceiling void clash stays open."
+- "Give me a health report for the project."
+- "Check every clarification cited in section 7 of the Scope of Works against the latest register."
+
 ## Scope and safety
 
 The agent reads only the project folder you registered, and writes only its own state folder.
@@ -64,6 +75,37 @@ python skills/project-manager/scripts/test_guard.py
 
 Project files are never modified. Registers get a new revision letter; the original is never
 overwritten. Email is read and draft only.
+
+## What it reads, writes, runs and sends
+
+**Reads.** Files in the registered project folder: drawing PDFs, registers and cost plans (.xlsx),
+Scope of Works and checklists (.docx), programme files. Read-only.
+
+**Writes.**
+- The project's state folder (default `<project>/.claude/pm-agent/`): `state.json`, `config.json`,
+  logs (`*.jsonl`), `dashboard.html`, `history/` snapshots and `reports/`.
+- One registration file per project in `~/.claude/pm-agent/projects/`, written by
+  `init_project.py` when you register a project.
+- New register revisions and other deliverables, only when you ask for them.
+
+**Runs.**
+- Python scripts bundled in the plugin: scan, render the dashboard, write the health report.
+- Optionally `serve_dashboard.py`, a local web server bound to `127.0.0.1` (port 8765 by
+  default). It serves the dashboard and appends your answers and chat messages to the state folder.
+  It is not reachable from other machines.
+- `highlight-sow-clarifications` runs PowerShell to drive the desktop Word and Excel already open on
+  your machine, through COM automation (Windows only).
+- `safe-xlsx-update` may open Excel through COM, read-only, to check a workbook before it is
+  saved (Windows only).
+
+**Sends and fetches.**
+- The plugin makes no network requests of its own, has no telemetry and contacts no external
+  service.
+- File content Claude reads while working is processed by Anthropic as part of your Claude
+  session, under your Claude plan's terms.
+- The email watch runs only if you have connected an email connector. It searches your mailbox and
+  drafts replies, and never sends.
+- Python packages are installed by you, from `requirements.txt`; the plugin installs nothing.
 
 ## Project-specific rules and lessons
 

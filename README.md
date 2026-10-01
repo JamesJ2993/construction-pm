@@ -23,6 +23,9 @@ pip install pymupdf openpyxl python-docx pillow
 
 Then ask Claude to "set up the PM on <your project folder>".
 
+Example prompts, and a full account of what the plugin reads, writes, runs and sends, are in the
+[plugin README](plugins/project-manager/README.md).
+
 ## Setup and support
 
 The plugin is free to use under the MIT licence.

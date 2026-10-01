@@ -1,6 +1,6 @@
 {
   "name": "project-manager",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "Project Manager agent for construction and fit-out projects. Watches a project folder's drawings, clarifications registers, programme and cost; keeps state and a live local dashboard; runs each stage through brief, produce, independent review and owner sign-off. Scope is enforced in code from a per-project registration. Bundles tender review, register-writing, safe Excel update and SOW cross-check skills.",
   "author": {
     "name": "JamesJ2993"
