@@ -94,6 +94,9 @@ def fixture_suite() -> list:
             failures.append(("fixture", "self-writable registration", planted))
         except project.ProjectError:
             print("  pass  refuses a registration inside its own writable folder")
+        planted.unlink()
+
+        failures += hook_suite(t, home, root, state, sibling)
 
     for k, v in saved_env.items():
         if v is None:
@@ -101,6 +104,36 @@ def fixture_suite() -> list:
         else:
             os.environ[k] = v
     project.reset()
+    return failures
+
+
+def hook_suite(t: Path, home: Path, root: Path, state: Path, sibling: Path) -> list:
+    """The PreToolUse hook that holds Claude's own Write/Edit calls to the boundary."""
+    import scope_hook
+
+    failures = []
+    print("\nWrite/Edit hook (scope_hook.py)")
+    cases = [
+        (state / "deliverables" / "report.md", True, "the state folder"),
+        (t / "elsewhere" / "notes.md", True, "a folder no registration covers"),
+        (sibling / "Drawings" / "x.md", True, "an unregistered project is not the PM's business"),
+        (root / "Drawings" / "markup.pdf", False, "inside the registered project, outside its write roots"),
+        (root / "report.docx", False, "the registered project root itself"),
+        (home / "projects" / "alpha.json", False, "its own registration"),
+        (home / "projects" / "new.json", False, "a new registration planted by a tool call"),
+    ]
+    for path, want, why in cases:
+        got = scope_hook.verdict(path) is None
+        ok = got == want
+        print(f"  {'pass' if ok else 'FAIL'}  {'allow ' if want else 'REFUSE'} {why}")
+        if not ok:
+            failures.append(("hook", why, path))
+    payload = {"tool_name": "Edit", "tool_input": {"file_path": str(root / "Drawings" / "a.pdf")}}
+    if scope_hook.target(payload) != root / "Drawings" / "a.pdf":
+        print("  FAIL  target() did not read tool_input.file_path")
+        failures.append(("hook", "target", payload))
+    else:
+        print("  pass  target() reads the path from the tool call")
     return failures
 
 

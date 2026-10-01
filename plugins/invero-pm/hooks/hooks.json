@@ -1,0 +1,17 @@
+{
+  "description": "Holds Write and Edit calls to the PM's registered scope: a registered project folder is read-only except its state folder and extra_write roots, and registrations themselves are never written by a tool call. Unregistered folders are unaffected.",
+  "hooks": {
+    "PreToolUse": [
+      {
+        "matcher": "Write|Edit|MultiEdit|NotebookEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "bash \"${CLAUDE_PLUGIN_ROOT}/hooks/scope-hook.sh\"",
+            "timeout": 15
+          }
+        ]
+      }
+    ]
+  }
+}

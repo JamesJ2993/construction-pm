@@ -1,8 +1,8 @@
 {
   "name": "invero-pm",
   "displayName": "Invero PM",
-  "version": "3.0.0",
-  "description": "Project Manager agent for construction and fit-out projects. Watches a project folder's drawings, clarifications registers, programme and cost; keeps state and a live local dashboard; runs each stage through brief, produce, independent review and owner sign-off. Scope is enforced in code from a per-project registration. Bundles tender review, register-writing, safe Excel update and SOW cross-check skills.",
+  "version": "4.0.0",
+  "description": "Project Manager agent and specialist team for construction and fit-out projects in any country. Watches a project folder's drawings, registers, programme/schedule and cost; keeps state and a live local dashboard; briefs specialists for claims and changes, programme analysis, tender comparison, scope of works, health checks, site reports, code compliance and close-out; runs every deliverable through brief, produce, independent review and owner sign-off, with statutory deadlines first. Adapts to the project's country and region through knowledge packs (Australia in depth, US starter, template for others). Scope is enforced in code and by a Write/Edit hook.",
   "author": {
     "name": "JamesJ2993"
   },
@@ -16,6 +16,12 @@
     "drawings",
     "rfi",
     "clarifications-register",
-    "dashboard"
+    "dashboard",
+    "building-codes",
+    "ncc",
+    "ibc",
+    "payment-claims",
+    "tender-evaluation",
+    "agents"
   ]
 }

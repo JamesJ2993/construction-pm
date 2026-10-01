@@ -4,7 +4,7 @@ Claude Code plugins for construction and fit-out project management.
 
 | Plugin | What it does |
 |---|---|
-| [invero-pm](plugins/invero-pm/README.md) | A PM agent that watches a project folder (drawing issues, clarifications registers, documentation health, programme and cost), runs a live local dashboard and takes each stage through independent review and your sign-off |
+| [invero-pm](plugins/invero-pm/README.md) | A PM agent and its team of specialist agents for construction and fit-out projects in any country. It watches a project folder (drawing issues, registers, documentation health, programme and cost), briefs specialists for claims, tenders, scope, health checks, site reports and code compliance, runs a live local dashboard and takes every deliverable through independent review and your sign-off. Adapts to the project's building code, payment law and terms (Australia in depth, US starter pack, template for others) |
 
 ## Install
 
@@ -21,7 +21,7 @@ Then install the Python dependencies (also listed in `plugins/invero-pm/requirem
 pip install pymupdf openpyxl python-docx pillow
 ```
 
-Then ask Claude to "set up the PM on <your project folder>".
+Then ask Claude to "set up the PM on <your project folder>", and tell it the country and region the project is in.
 
 Example prompts, and a full account of what the plugin reads, writes, runs and sends, are in the
 [plugin README](plugins/invero-pm/README.md).

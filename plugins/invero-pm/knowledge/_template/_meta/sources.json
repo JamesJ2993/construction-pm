@@ -1,0 +1,6 @@
+{
+  "_note": "Sources the currency watcher polls for this pack.",
+  "schema_version": 1,
+  "sources": [],
+  "not_monitored": []
+}

@@ -40,6 +40,7 @@ STATUS_META = {
 
 def wait_groups() -> list[tuple[str, str, str]]:
     return [
+        ("statutory", "Statutory deadline", "gate"),
         ("approval", "Approval needed", "gate"),
         ("question", f"Question for {pm_state.owner()}", "warn"),
         ("missing_input", "Missing input", "warn"),
@@ -278,13 +279,14 @@ def render_waiting(stores: dict) -> str:
            'Claude chat — the PM records each answer, unblocks work, and refreshes this page.</p>']
     groups = wait_groups()
     order = {t: i for i, (t, _, _) in enumerate(groups)}
-    items.sort(key=lambda x: order.get(x[2].get("type"), 9))
+    items.sort(key=lambda x: (order.get(x[2].get("type"), 9), x[2].get("due") or "9999"))
     labels = {t: (lbl, cls) for t, lbl, cls in groups}
     for key, name, w in items:
         lbl, cls = labels.get(w.get("type"), ("Other", "dim"))
         wid = esc(w.get("id"))
         qtext = esc(w.get("text"))
         quick = ""
+        due = (f'<b>due {esc(pm_state.display_dates(w["due"]))}</b> · ' if w.get("due") else "")
         if w.get("type") == "approval":
             quick = ('<button class="qb" data-fill="Approved.">Approve</button>'
                      '<button class="qb" data-fill="Rejected: ">Reject</button>')
@@ -292,7 +294,7 @@ def render_waiting(stores: dict) -> str:
             f'<div class="item" style="flex-wrap:wrap">'
             f'<span class="tag {cls}">{esc(lbl)}</span>'
             f'<span style="flex:1;min-width:260px"><b>{esc(name)}</b> — {qtext}</span>'
-            f'<span class="who">{esc(w.get("needed_from"))} · {esc(w.get("raised"))}</span>'
+            f'<span class="who">{due}{esc(w.get("needed_from"))} · {esc(w.get("raised"))}</span>'
             f'<span class="ansrow"><input class="ans" data-id="{wid}" data-q="{qtext}" '
             f'placeholder="Your answer / context for the PM…">{quick}'
             f'<button class="sendb">Send to PM</button></span></div>')
@@ -330,8 +332,33 @@ def render_detail(key: str, s: dict) -> str:
 </div>"""
 
 
+def step_label(key: str, label: str) -> str:
+    """Column labels in the project's terms - "Schedule" on a US job, "Programme" in Australia."""
+    if key == "programme_review":
+        word = term("schedule")
+        return word[:1].upper() + word[1:] if word else label
+    return label
+
+
+def term(key: str) -> str | None:
+    facts = cfg().get("project_facts") or {}
+    override = (cfg().get("terminology") or {}).get(key)
+    if override:
+        return override
+    country = facts.get("country")
+    if not country:
+        return None
+    try:
+        sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "knowledge-base" / "scripts"))
+        import kbpaths
+        return kbpaths.load_json(country, "terminology.json").get(key)
+    except Exception:  # noqa: BLE001 - labels are cosmetic; never fail a render on them
+        return None
+
+
 def render_matrix(stores: dict) -> str:
-    head = "<tr><th>Project</th>" + "".join(f"<th>{lbl}</th>" for _, lbl in STEP_COLS) + "</tr>"
+    head = ("<tr><th>Project</th>" + "".join(f"<th>{esc(step_label(k, lbl))}</th>" for k, lbl in STEP_COLS)
+            + "</tr>")
     rows = []
     ncols = len(STEP_COLS) + 1
     for key, s in sorted(stores.items()):

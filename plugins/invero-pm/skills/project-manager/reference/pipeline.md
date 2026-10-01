@@ -28,12 +28,14 @@ Cross-cutting (not columns): documentation health (every scan), evidence registe
 ## Waiting-on entry
 
 ```json
-{"id": "<project id>-<slug>", "type": "approval|missing_input|question|external|email",
- "text": "...", "needed_from": "...", "raised": "YYYY-MM-DD"}
+{"id": "<project id>-<slug>", "type": "statutory|approval|missing_input|question|external|email",
+ "text": "...", "needed_from": "...", "raised": "YYYY-MM-DD", "due": "YYYY-MM-DD"}
 ```
 
-Data gates (`missing_input` raised by the scanner) clear themselves on the next scan when the input
-appears. `approval` and `external` items persist across scans until resolved. `pm_state.resolve()`
+`statutory` items carry a `due` date (required) — a deadline set by law or the contract: a payment
+response, a payment or lien notice, a time bar. They sort above everything on the dashboard and persist
+across scans until resolved. Data gates (`missing_input` raised by the scanner) clear themselves on the
+next scan when the input appears. `approval` and `external` items persist across scans until resolved. `pm_state.resolve()`
 moves an item into the project's `resolved` map, and the scanner never re-raises a resolved id.
 
 ## Documentation health
@@ -88,7 +90,8 @@ Scanner behaviour worth knowing:
 
 ## Audit trail
 
-- `activity-log.jsonl` — every scan, brief, stage run, render, resolution
+- `activity-log.jsonl` — every scan, brief, commission (with its id, specialist and envelope status,
+  `no-return` included), stage run, render, resolution and lesson edit
 - `approvals.jsonl` — every sign-off decision: ts, project, gate, decision, by, artifact, note
 - `history/state-*.json` — snapshot before every mutating save
 - `scope-denials.jsonl` — every path the guard refused

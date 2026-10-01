@@ -1,0 +1,96 @@
+{
+  "_note": "Pointers and paraphrase only - never code or standard text. Editions are not recorded here: the edition is the one the adopted code references. Enforced by kb-lint.py.",
+  "verified": "2026-10-01",
+  "confidence": "provisional",
+  "licence": "own-words",
+  "standards": [
+    {
+      "number": "NFPA 13",
+      "title": "Standard for the Installation of Sprinkler Systems",
+      "discipline": "fire protection",
+      "governs": "Sprinkler design, layout, spacing, obstructions and hydraulic calculation",
+      "code_hook": "IBC Chapter 9 / IFC require automatic sprinklers to this standard",
+      "pm_trigger": "Any ceiling, bulkhead, soffit or tall-joinery change; a change of hazard classification from a new use or storage height"
+    },
+    {
+      "number": "NFPA 72",
+      "title": "National Fire Alarm and Signaling Code",
+      "discipline": "fire protection",
+      "governs": "Fire alarm, detection and notification - device spacing, audibility and visibility, interfaces",
+      "code_hook": "IBC/IFC fire alarm sections call it up",
+      "pm_trigger": "New rooms or partitions, ceiling height changes, a change of use that changes notification requirements"
+    },
+    {
+      "number": "NFPA 70",
+      "title": "National Electrical Code (NEC)",
+      "discipline": "electrical",
+      "governs": "Wiring methods, overcurrent protection, grounding, working clearances",
+      "code_hook": "Adopted directly by the state or locality, often on its own edition cycle",
+      "pm_trigger": "Panel changes, new circuits for equipment, working clearance in front of switchboards, emergency and exit lighting circuits"
+    },
+    {
+      "number": "NFPA 101",
+      "title": "Life Safety Code",
+      "discipline": "architectural",
+      "governs": "Means of egress, occupancy-based life-safety features",
+      "code_hook": "Used instead of or beside the IBC in some jurisdictions and for federally regulated healthcare",
+      "pm_trigger": "Healthcare or assembly occupancies; a jurisdiction that adopts NFPA 101 for existing buildings"
+    },
+    {
+      "number": "ICC A117.1",
+      "title": "Accessible and Usable Buildings and Facilities",
+      "discipline": "architectural",
+      "governs": "Technical accessibility criteria - clear floor spaces, reach ranges, door clearances, accessible toilet rooms",
+      "code_hook": "IBC accessibility chapter references it",
+      "pm_trigger": "Counters, door hardware and clearances, toilet room layouts, any change to an accessible route. Check the 2010 ADA Standards separately - they are a different regime"
+    },
+    {
+      "number": "ASHRAE 90.1",
+      "title": "Energy Standard for Sites and Buildings Except Low-Rise Residential Buildings",
+      "discipline": "mechanical",
+      "governs": "Envelope, HVAC, lighting power and controls energy requirements",
+      "code_hook": "Accepted by the IECC as an alternative commercial compliance path",
+      "pm_trigger": "Lighting layouts and controls, HVAC replacement, envelope changes - confirm which path the AHJ accepts"
+    },
+    {
+      "number": "ASHRAE 62.1",
+      "title": "Ventilation and Acceptable Indoor Air Quality",
+      "discipline": "mechanical",
+      "governs": "Minimum outdoor-air ventilation rates by space type",
+      "code_hook": "Referenced through the IMC ventilation chapter in many jurisdictions",
+      "pm_trigger": "Any change of use or occupant density, new rooms, kitchen or exhaust changes"
+    },
+    {
+      "number": "ASTM E119",
+      "title": "Standard Test Methods for Fire Tests of Building Construction and Materials",
+      "discipline": "architectural",
+      "governs": "The fire-resistance test behind rated wall, floor and ceiling assemblies",
+      "code_hook": "IBC fire-resistance chapter",
+      "pm_trigger": "Any penetration or alteration of a rated assembly - the tested assembly listing (for example a UL design number) has to match what is built"
+    },
+    {
+      "number": "UL 263",
+      "title": "Fire Tests of Building Construction and Materials",
+      "discipline": "architectural",
+      "governs": "UL's equivalent fire-resistance test; listed designs are what drawings cite",
+      "code_hook": "IBC fire-resistance chapter",
+      "pm_trigger": "Drawings citing a rated assembly by listing number - confirm the listed design matches the drawn and built assembly"
+    },
+    {
+      "number": "ACI 318",
+      "title": "Building Code Requirements for Structural Concrete",
+      "discipline": "structural",
+      "governs": "Design and detailing of structural concrete",
+      "code_hook": "IBC structural chapters",
+      "pm_trigger": "Slab penetrations, coring, post-installed anchors into existing slabs, new loads on existing floors"
+    },
+    {
+      "number": "AISC 360",
+      "title": "Specification for Structural Steel Buildings",
+      "discipline": "structural",
+      "governs": "Design of structural steel members and connections",
+      "code_hook": "IBC structural chapters",
+      "pm_trigger": "New openings in steel framing, hung loads from existing steel, signage and equipment supports"
+    }
+  ]
+}

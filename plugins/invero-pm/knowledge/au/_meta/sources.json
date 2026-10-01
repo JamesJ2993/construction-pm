@@ -1,0 +1,234 @@
+{
+  "_note": "Sources the currency watcher polls for the Australian pack. content_hash is set on each successful fetch; a changed hash is what triggers triage. Empty hash means never fetched. Every jurisdiction has a source: a jurisdiction with no source is one the watcher reports as unchanged while never looking at it, which is indistinguishable from a clean scan. The watcher writes its state to the user's overlay copy of this file, never to the shipped one.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "abcb-news",
+      "name": "ABCB / NCC news",
+      "url": "https://ncc.abcb.gov.au/news",
+      "item_pattern": "/news/{year}/{slug}",
+      "cadence": "weekly",
+      "catches": "NCC amendments, adoption dates, new handbooks, calculators, CPD material",
+      "licence": "CC-BY-4.0",
+      "applies_to": [
+        "all"
+      ],
+      "last_checked": null,
+      "content_hash": ""
+    },
+    {
+      "id": "abcb-ncc-editions",
+      "name": "NCC adoption and editions",
+      "url": "https://ncc.abcb.gov.au/editions-national-construction-code",
+      "cadence": "monthly",
+      "catches": "A new edition, or a jurisdiction changing its adoption date. Changes which edition governs new jobs.",
+      "licence": "CC-BY-4.0",
+      "applies_to": [
+        "all"
+      ],
+      "last_checked": null,
+      "content_hash": ""
+    },
+    {
+      "id": "safework-nsw-codes",
+      "name": "SafeWork NSW codes of practice",
+      "url": "https://www.safework.nsw.gov.au/resource-library/list-of-all-codes-of-practice",
+      "cadence": "monthly",
+      "catches": "New or revised approved codes. Mandatory under WHS Act s26A since 01.07.2026, so a new code is a new obligation, not new guidance.",
+      "licence": "own-words",
+      "applies_to": [
+        "NSW"
+      ],
+      "last_checked": null,
+      "content_hash": ""
+    },
+    {
+      "id": "swa-model-codes",
+      "name": "Safe Work Australia model codes of practice",
+      "url": "https://www.safeworkaustralia.gov.au/taxonomy/term/163",
+      "cadence": "monthly",
+      "catches": "Model codes, which states then adopt. Gives early warning of a state code before it lands.",
+      "licence": "own-words",
+      "applies_to": [
+        "all"
+      ],
+      "last_checked": null,
+      "content_hash": ""
+    },
+    {
+      "id": "nsw-planning-portal",
+      "name": "NSW Planning Portal",
+      "url": "https://www.planningportal.nsw.gov.au/",
+      "cadence": "monthly",
+      "catches": "CDC and DA pathway changes, complying development reform",
+      "licence": "own-words",
+      "applies_to": [
+        "NSW"
+      ],
+      "last_checked": null,
+      "content_hash": ""
+    },
+    {
+      "id": "nsw-legislation-building",
+      "name": "NSW building and construction legislation",
+      "url": "https://www.nsw.gov.au/housing-and-construction/compliance-and-regulation",
+      "cadence": "monthly",
+      "catches": "Building (Approvals and Practitioners) Act 2026 commencement, DBP Act changes, Security of Payment amendments",
+      "licence": "public-domain",
+      "applies_to": [
+        "NSW"
+      ],
+      "last_checked": null,
+      "content_hash": "",
+      "note": "legislation.nsw.gov.au and parliament.nsw.gov.au both return HTTP 403 to automated requests. This page covers the same ground; the Act text itself is read manually when needed."
+    },
+    {
+      "id": "standards-au-new",
+      "name": "Standards Australia new releases",
+      "url": "https://store.standards.org.au/explore-standards/new-releases",
+      "watch": "manual",
+      "cadence": "monthly",
+      "catches": "New and revised AS/NZS. Numbers and titles are facts and monitorable; clause text is licensed and never copied.",
+      "licence": "own-words",
+      "applies_to": [
+        "all"
+      ],
+      "note": "JavaScript storefront - a plain fetch yields no text, and standards.org.au pages return an identical 253-character shell. Checked by a person; record it with --manual standards-au-new.",
+      "manual_check": "Open the URL, scan for new or revised standards that supersede anything in standards/index.json, then run --manual to record the check.",
+      "last_checked": null,
+      "content_hash": ""
+    },
+    {
+      "id": "vic-worksafe-codes",
+      "name": "WorkSafe Victoria laws and regulations",
+      "url": "https://www.worksafe.vic.gov.au/laws-and-regulations",
+      "cadence": "monthly",
+      "catches": "Victoria runs the OHS Act 2004 and its own compliance codes, not the model WHS laws. A NSW code of practice has no application here.",
+      "licence": "own-words",
+      "applies_to": [
+        "VIC"
+      ],
+      "last_checked": null,
+      "content_hash": ""
+    },
+    {
+      "id": "vic-planning",
+      "name": "Victorian planning schemes and practice notes",
+      "url": "https://www.planning.vic.gov.au/guides-and-resources/practice-and-advisory-notes",
+      "cadence": "monthly",
+      "catches": "Changes to the approval pathway for fitout and change-of-use work. planning.vic.gov.au returns HTTP 403 to automated requests — checked by a person on the weekly or monthly cadence and recorded with --manual.",
+      "licence": "own-words",
+      "applies_to": [
+        "VIC"
+      ],
+      "last_checked": null,
+      "content_hash": "",
+      "watch": "manual"
+    },
+    {
+      "id": "vic-legislation-sop",
+      "name": "Victorian legislation — security of payment",
+      "url": "https://www.legislation.vic.gov.au/in-force/acts/building-and-construction-industry-security-payment-act-2002",
+      "cadence": "monthly",
+      "catches": "The Act as amended from 15.04.2026. Two provisions of the amending Act had not commenced at August 2026 — this is what catches their commencement.",
+      "licence": "own-words",
+      "applies_to": [
+        "VIC"
+      ],
+      "last_checked": null,
+      "content_hash": ""
+    },
+    {
+      "id": "qld-whs-codes",
+      "name": "WorkSafe Queensland codes of practice",
+      "url": "https://www.worksafe.qld.gov.au/laws-and-compliance/codes-of-practice",
+      "cadence": "monthly",
+      "catches": "New or revised approved codes in Queensland. worksafe.qld.gov.au has returned HTTP 403 to automated requests on every scan since 25 August 2026 — converted to manual watch 21 September 2026; checked by a person on the weekly or monthly cadence and recorded with --manual.",
+      "licence": "own-words",
+      "applies_to": [
+        "QLD"
+      ],
+      "last_checked": null,
+      "content_hash": "",
+      "watch": "manual"
+    },
+    {
+      "id": "wa-whs-codes",
+      "name": "WorkSafe WA codes of practice",
+      "url": "https://www.commerce.wa.gov.au/worksafe/codes-practice",
+      "cadence": "monthly",
+      "catches": "WA adopted its own WHS Act 2020; its codes differ from the model set.",
+      "licence": "own-words",
+      "applies_to": [
+        "WA"
+      ],
+      "last_checked": null,
+      "content_hash": ""
+    },
+    {
+      "id": "sa-whs-codes",
+      "name": "SafeWork SA codes of practice",
+      "url": "https://www.safework.sa.gov.au/resources/codes-of-practice",
+      "cadence": "monthly",
+      "catches": "New or revised approved codes in South Australia. safework.sa.gov.au returns HTTP 403 to automated requests — checked by a person on the weekly or monthly cadence and recorded with --manual.",
+      "licence": "own-words",
+      "applies_to": [
+        "SA"
+      ],
+      "last_checked": null,
+      "content_hash": "",
+      "watch": "manual"
+    },
+    {
+      "id": "tas-whs-codes",
+      "name": "WorkSafe Tasmania codes of practice",
+      "url": "https://worksafe.tas.gov.au/topics/laws-and-compliance/codes-of-practice",
+      "cadence": "monthly",
+      "catches": "New or revised approved codes in Tasmania. worksafe.tas.gov.au returns HTTP 403 to automated requests — checked by a person on the weekly or monthly cadence and recorded with --manual.",
+      "licence": "own-words",
+      "applies_to": [
+        "TAS"
+      ],
+      "last_checked": null,
+      "content_hash": "",
+      "watch": "manual"
+    },
+    {
+      "id": "nt-whs-codes",
+      "name": "NT WorkSafe codes of practice",
+      "url": "https://worksafe.nt.gov.au/laws-and-compliance/workplace-safety-laws/codes-of-practice",
+      "cadence": "monthly",
+      "catches": "New or revised approved codes in the Northern Territory. worksafe.nt.gov.au returns HTTP 403 to automated requests at every path — checked by a person on the weekly or monthly cadence.",
+      "licence": "own-words",
+      "applies_to": [
+        "NT"
+      ],
+      "last_checked": null,
+      "content_hash": "",
+      "watch": "manual"
+    },
+    {
+      "id": "act-whs-codes",
+      "name": "WorkSafe ACT codes of practice",
+      "url": "https://www.worksafe.act.gov.au/laws-and-compliance/codes-of-practice",
+      "cadence": "monthly",
+      "catches": "New or revised approved codes in the ACT.",
+      "licence": "own-words",
+      "applies_to": [
+        "ACT"
+      ],
+      "last_checked": null,
+      "content_hash": ""
+    }
+  ],
+  "not_monitored": [
+    {
+      "what": "Australian Standards clause content",
+      "why": "Paywalled and licensed. Only the published list of numbers and titles is monitored; wording comes from the firm's licensed copies at the time it is needed."
+    },
+    {
+      "what": "State regulators outside NSW",
+      "why": "No active project in those jurisdictions. Added when the registry gains one - the watcher keys off registry jurisdiction, so an unused source is noise."
+    }
+  ]
+}

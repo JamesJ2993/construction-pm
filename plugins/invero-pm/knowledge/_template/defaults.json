@@ -1,0 +1,40 @@
+{
+  "_note": "Country defaults applied at project setup. Fill every field before relying on the pack.",
+  "country": "",
+  "name": "",
+  "language": "",
+  "date_format": "DD/MM/YYYY",
+  "currency": "",
+  "currency_code": "",
+  "area_unit": "",
+  "length_unit": "",
+  "building_code": "",
+  "standards_bodies": [],
+  "payment_law": "",
+  "safety_regime": "",
+  "contract_forms": [],
+  "regions": {},
+  "regional_branches": [
+    "payment",
+    "safety",
+    "permitting"
+  ],
+  "expected_disciplines": [
+    "architectural",
+    "structural",
+    "mechanical",
+    "electrical",
+    "plumbing",
+    "fire"
+  ],
+  "discipline_prefixes": {
+    "A": "architectural",
+    "S": "structural",
+    "M": "mechanical",
+    "E": "electrical",
+    "P": "plumbing",
+    "F": "fire"
+  },
+  "licence_attribution": {},
+  "licence_note": ""
+}

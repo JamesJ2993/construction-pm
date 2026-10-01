@@ -1,83 +1,290 @@
 {
-  "schema_version": 2,
+  "schema_version": 3,
+  "project_facts": {
+    "country": null,
+    "region": null,
+    "address": null,
+    "client": null,
+    "role": "consultant project manager acting for the client",
+    "authority_having_jurisdiction": null,
+    "building_code": null,
+    "payment_law": null,
+    "payment_periods": {},
+    "safety_regime": null,
+    "contract_form": null,
+    "contract_periods": {}
+  },
+  "terminology": {},
   "aliases": [],
-  "ignore_files": ["Thumbs.db", "desktop.ini", ".DS_Store"],
-  "ignore_prefixes": ["~$"],
-  "skip_dirs": ["CADs", "CAD", "LINKEDs", "_SS", "SS", "pages-to-jpg"],
-
+  "ignore_files": [
+    "Thumbs.db",
+    "desktop.ini",
+    ".DS_Store"
+  ],
+  "ignore_prefixes": [
+    "~$"
+  ],
+  "skip_dirs": [
+    "CADs",
+    "CAD",
+    "LINKEDs",
+    "_SS",
+    "SS",
+    "pages-to-jpg"
+  ],
   "drawings": {
     "dir": "Drawings",
     "stages": [
-      {"folder": "1. Existing", "stage": "existing", "is_issue": false},
-      {"folder": "2. Preliminary Issue", "stage": "preliminary"},
-      {"folder": "3. Tender Issue", "stage": "tender"},
-      {"folder": "4. Construction Issue", "stage": "construction"},
-      {"folder": "5. As Built", "stage": "as_built"}
+      {
+        "folder": "1. Existing",
+        "stage": "existing",
+        "is_issue": false
+      },
+      {
+        "folder": "2. Preliminary Issue",
+        "stage": "preliminary"
+      },
+      {
+        "folder": "3. Tender Issue",
+        "stage": "tender"
+      },
+      {
+        "folder": "4. Construction Issue",
+        "stage": "construction"
+      },
+      {
+        "folder": "5. As Built",
+        "stage": "as_built"
+      }
     ],
     "tender_stage": "tender",
     "skip_folders": [],
     "pinned_set_pattern": null,
-    "expected_disciplines": ["architectural", "structural", "mechanical", "electrical", "hydraulic", "fire"],
-    "discipline_prefixes": {"A": "architectural", "S": "structural", "M": "mechanical",
-                            "E": "electrical", "H": "hydraulic", "F": "fire"}
+    "expected_disciplines": [
+      "architectural",
+      "structural",
+      "mechanical",
+      "electrical",
+      "hydraulic",
+      "fire"
+    ],
+    "discipline_prefixes": {
+      "A": "architectural",
+      "S": "structural",
+      "M": "mechanical",
+      "E": "electrical",
+      "H": "hydraulic",
+      "F": "fire"
+    }
   },
-
   "registers": {
-    "dirs": ["Tender", "Drawings/3. Tender Issue"],
-    "exts": [".xlsx", ".xlsm"],
+    "dirs": [
+      "Tender",
+      "Drawings/3. Tender Issue"
+    ],
+    "exts": [
+      ".xlsx",
+      ".xlsm"
+    ],
     "pattern": "clarific|register",
     "exclude": "subcontractor"
   },
-
   "documents": {
-    "sow": {"find": [
-      {"dir": "Tender", "exts": [".docx", ".doc"], "pattern": "scope[ _]*of[ _]*works|\\bsow\\b"},
-      {"dir": "Tender", "exts": [".docx"], "pattern": "scope"}
-    ]},
-    "checklist": {"find": [{"dir": "Checklists", "exts": [".docx", ".xlsx"], "pattern": "checklist"}]},
-    "tender_analysis": {"find": [
-      {"dir": "Finance", "exts": [".xlsx", ".pdf"], "pattern": "tender[ _]*analysis|cost[ _]*comparison"},
-      {"dir": "Tender", "exts": [".xlsx", ".pdf"], "pattern": "tender[ _]*analysis|cost[ _]*comparison"}
-    ]},
-    "site_survey": {"folder": ["Site Survey"]},
-    "permits": {"folder": ["Certificates & Permits"]},
-    "safety": {"folder": ["Safety"]},
-    "operation_manual": {"folder": ["Operation Manual"]},
-    "trade_contract": {"find": [{"dir": "Finance", "exts": [".pdf", ".docx", ".doc"],
-                                 "pattern": "trade[ _]*contract|contract[ _]*executed"}]},
-    "handover_report": {"find": [{"dir": "Defects", "exts": [".xlsx", ".pdf"], "pattern": "handover"}]}
+    "sow": {
+      "find": [
+        {
+          "dir": "Tender",
+          "exts": [
+            ".docx",
+            ".doc"
+          ],
+          "pattern": "scope[ _]*of[ _]*works|\\bsow\\b"
+        },
+        {
+          "dir": "Tender",
+          "exts": [
+            ".docx"
+          ],
+          "pattern": "scope"
+        }
+      ]
+    },
+    "checklist": {
+      "find": [
+        {
+          "dir": "Checklists",
+          "exts": [
+            ".docx",
+            ".xlsx"
+          ],
+          "pattern": "checklist"
+        }
+      ]
+    },
+    "tender_analysis": {
+      "find": [
+        {
+          "dir": "Finance",
+          "exts": [
+            ".xlsx",
+            ".pdf"
+          ],
+          "pattern": "tender[ _]*analysis|cost[ _]*comparison"
+        },
+        {
+          "dir": "Tender",
+          "exts": [
+            ".xlsx",
+            ".pdf"
+          ],
+          "pattern": "tender[ _]*analysis|cost[ _]*comparison"
+        }
+      ]
+    },
+    "site_survey": {
+      "folder": [
+        "Site Survey"
+      ]
+    },
+    "permits": {
+      "folder": [
+        "Certificates & Permits"
+      ]
+    },
+    "safety": {
+      "folder": [
+        "Safety"
+      ]
+    },
+    "operation_manual": {
+      "folder": [
+        "Operation Manual"
+      ]
+    },
+    "trade_contract": {
+      "find": [
+        {
+          "dir": "Finance",
+          "exts": [
+            ".pdf",
+            ".docx",
+            ".doc"
+          ],
+          "pattern": "trade[ _]*contract|contract[ _]*executed"
+        }
+      ]
+    },
+    "handover_report": {
+      "find": [
+        {
+          "dir": "Defects",
+          "exts": [
+            ".xlsx",
+            ".pdf"
+          ],
+          "pattern": "handover"
+        }
+      ]
+    }
   },
-
-  "programme": {"dir": "Programme", "exts": [".pdf", ".mpp"], "milestone": "Practical completion"},
-
+  "programme": {
+    "dir": "Programme",
+    "exts": [
+      ".pdf",
+      ".mpp"
+    ],
+    "milestone": "Practical completion"
+  },
   "budget": {
     "dir": "Finance",
     "file_pattern": "budget|cost plan",
     "labels": {
-      "total": ["total project cost", "total budget"],
-      "contract_sum": ["contract sum", "head contract"],
-      "area": ["total sqm", "total area", "gfa"]
+      "total": [
+        "total project cost",
+        "total budget"
+      ],
+      "contract_sum": [
+        "contract sum",
+        "head contract"
+      ],
+      "area": [
+        "total sqm",
+        "total area",
+        "gfa"
+      ]
     },
-    "count_dirs": {"invoices": "Invoices", "purchase_orders": "Purchase Orders", "quotes": "Quotes"}
+    "count_dirs": {
+      "invoices": "Invoices",
+      "purchase_orders": "Purchase Orders",
+      "quotes": "Quotes"
+    }
   },
-
   "evidence_register": null,
-
   "required_documents": {
-    "preliminary": ["drawing_set", "register", "checklist", "program", "site_survey", "budget"],
-    "tender": ["drawing_set", "register", "checklist", "sow", "tender_analysis", "program", "site_survey", "budget", "permits"],
-    "construction": ["drawing_set", "register", "checklist", "sow", "tender_analysis", "trade_contract", "program", "budget", "permits", "safety"],
-    "as_built": ["drawing_set", "program", "budget", "permits", "safety", "operation_manual", "handover_report"]
+    "preliminary": [
+      "drawing_set",
+      "register",
+      "checklist",
+      "program",
+      "site_survey",
+      "budget"
+    ],
+    "tender": [
+      "drawing_set",
+      "register",
+      "checklist",
+      "sow",
+      "tender_analysis",
+      "program",
+      "site_survey",
+      "budget",
+      "permits"
+    ],
+    "construction": [
+      "drawing_set",
+      "register",
+      "checklist",
+      "sow",
+      "tender_analysis",
+      "trade_contract",
+      "program",
+      "budget",
+      "permits",
+      "safety"
+    ],
+    "as_built": [
+      "drawing_set",
+      "program",
+      "budget",
+      "permits",
+      "safety",
+      "operation_manual",
+      "handover_report"
+    ]
   },
   "doc_weights": {
-    "drawing_set": 3, "register": 2, "checklist": 2, "sow": 2, "tender_analysis": 1,
-    "trade_contract": 1, "program": 2, "site_survey": 1, "budget": 2, "permits": 1,
-    "safety": 1, "operation_manual": 1, "handover_report": 1
+    "drawing_set": 3,
+    "register": 2,
+    "checklist": 2,
+    "sow": 2,
+    "tender_analysis": 1,
+    "trade_contract": 1,
+    "program": 2,
+    "site_survey": 1,
+    "budget": 2,
+    "permits": 1,
+    "safety": 1,
+    "operation_manual": 1,
+    "handover_report": 1
   },
-  "date_sensitive_docs": ["register", "checklist", "sow", "tender_analysis"],
+  "date_sensitive_docs": [
+    "register",
+    "checklist",
+    "sow",
+    "tender_analysis"
+  ],
   "ignore_docs": [],
   "stale_ok": [],
-
   "skills": {
     "register_review": "invero-pm:tender-documentation-review",
     "register_initial": "invero-pm:tender-documentation-review",
@@ -85,22 +292,74 @@
     "workbook_writes": "invero-pm:safe-xlsx-update",
     "sow_check": "invero-pm:highlight-sow-clarifications",
     "doc_checklist": null,
-    "writing_style": null
+    "writing_style": null,
+    "deliverable_build": "invero-pm:deliverable-build",
+    "knowledge": "invero-pm:knowledge-base"
   },
-
   "permissions": {
     "evidence_refiling": false,
     "stage_skeletons": false
   },
-
   "email": {
-    "keywords": ["tender issue", "construction issue", "drawing", "RFI", "clarification", "revision", "issued for"]
+    "keywords": [
+      "tender issue",
+      "construction issue",
+      "drawing",
+      "RFI",
+      "clarification",
+      "revision",
+      "issued for"
+    ]
   },
-
   "report": {
     "byline": "",
     "currency": "$",
     "area_unit": "sqm",
-    "cost_label": "Budget"
+    "cost_label": "Budget",
+    "letterhead": null,
+    "prepared_by": "",
+    "draft_marking": "DRAFT — for review"
+  },
+  "procedures": {
+    "claims": null,
+    "safety": null,
+    "legal": null,
+    "review_and_issue": null,
+    "document_control": null,
+    "nonconformance": null,
+    "ai_verification": null,
+    "new_project": null,
+    "programme": null,
+    "reporting": null,
+    "risk": null,
+    "close_out": null,
+    "competency": null
+  },
+  "tuning": {
+    "approvals_chase_days": 2,
+    "health_check_stale_days": 30,
+    "programme_runs_per_project_day": 1,
+    "deadline_horizon_bdays": 3,
+    "repeat_deferral_cycles": 2,
+    "mail_lookback_days": 7,
+    "source_scan_stale_days": 7,
+    "kb_entry_stale_days": 180
+  },
+  "filing": {
+    "default": "deliverables",
+    "health_check": "deliverables/health-checks",
+    "report": "deliverables/reports",
+    "tender_evaluation": "deliverables/tender",
+    "scope_of_works": "deliverables/tender",
+    "claim_assessment": "deliverables/commercial",
+    "cost_report": "deliverables/commercial",
+    "programme_review": "deliverables/programme",
+    "site_report": "deliverables/site",
+    "register": "deliverables/registers",
+    "close_out": "deliverables/close-out",
+    "drafts": "drafts"
+  },
+  "templates": {
+    "dir": null
   }
 }

@@ -12,6 +12,16 @@ Plus two notes files in the state folder, both read at the start of every run:
 `project-notes.md` (project-specific rules and their history) and `lessons.md` (the daily review's
 output).
 
+Shared across every project, in the PM home (`~/.claude/pm-agent/`, or `$PM_AGENT_HOME`):
+
+| Path | Holds | Written by |
+|---|---|---|
+| `projects/<id>.json` | Registrations | the owner, or `init_project.py` on their word — never a tool call (the hook refuses it) |
+| `practice/lessons.md` | The practice playbook: an index, then `LSN-nnn` lessons, no client data | the PM at the daily review |
+| `practice/proposals/` | Proposed new agents and skills, for the owner to install | the PM |
+| `knowledge/<country>/` | The owner's knowledge-pack overlay — wins over the shipped pack | `knowledge-curator-agent` only |
+| `cache/` | Currency-watch snapshots | `kb-watch-sources.py` |
+
 ## Registration
 
 ```json
@@ -54,6 +64,8 @@ project. Paths are relative to the project root; use `/` as the separator.
 
 | Section | What it controls |
 |---|---|
+| `project_facts` | where the project is and what governs it — see below |
+| `terminology` | overrides of the country pack's terms for this project (e.g. `"client_rep": "Construction Manager"`) |
 | `aliases` | other names for the project — used by the email watch |
 | `ignore_files`, `ignore_prefixes`, `skip_dirs` | clutter the scanner never lists (`~$` lock files, CAD folders) |
 | `drawings.dir`, `drawings.stages` | the drawings folder and its stage subfolders, in issue order. `is_issue: false` marks a folder that never counts as the current set (existing conditions, lease plans) |
@@ -72,7 +84,35 @@ project. Paths are relative to the project root; use `/` as the separator.
 | `skills` | which skill governs each stage (see SKILL.md) |
 | `permissions` | `evidence_refiling`, `stage_skeletons` — both off by default |
 | `email.keywords` | email watch search terms |
-| `report` | `byline`, `currency`, `area_unit`, `cost_label` for the dashboard and health report |
+| `report` | `byline`, `currency`, `area_unit`, `cost_label` for the dashboard and health report; `letterhead` (a `.docx` whose headers, footers, images and margins every deliverable is built on — `null` builds plain); `prepared_by`; `draft_marking` |
+| `procedures` | the firm's own management-system documents, by activity — see [procedures.md](procedures.md). `null` means the plugin's rule applies as written |
+| `tuning` | the dials: `approvals_chase_days`, `health_check_stale_days`, `programme_runs_per_project_day`, `deadline_horizon_bdays`, `repeat_deferral_cycles`, `mail_lookback_days`, `source_scan_stale_days`, `kb_entry_stale_days` (never below 90) |
+| `filing` | deliverable type → folder. Relative paths sit under the state folder (default `deliverables/…`); a folder inside the project tree must also be in the registration's `extra_write` |
+| `templates.dir` | the firm's controlled template library. When set, `check-provenance.py` checks deliverables against it and **a missing library is an error**, never a silent fallback |
+
+### project_facts
+
+Recorded at setup, kept current by the PM, read by every specialist. **Unknown is recorded as `null`
+and raised — never guessed.**
+
+| Key | Example (AU) | Example (US) |
+|---|---|---|
+| `country`, `region` | `au`, `vic` | `us`, `tx` |
+| `address`, `client` | the site; the client entity | |
+| `role` | `consultant project manager acting for the client` | `owner's representative` |
+| `authority_having_jurisdiction` | the relevant building surveyor / council | `City of Austin Development Services` |
+| `building_code` | `NCC 2022 with Victorian variations — building permit applied 3 March 2024` | `IBC 2021 as amended by the City of Austin — permit applied 3 March 2024` |
+| `payment_law` | `Building and Construction Industry Security of Payment Act 2002 (Vic)` | `Texas Property Code ch. 28 (prompt pay) and ch. 53 (liens)` |
+| `payment_periods` | `{"payment_response_due": "<n> business days after service — s <x>", ...}` — each with the section that fixes it | same shape |
+| `safety_regime` | `OHS Act 2004 (Vic)` | `OSHA 29 CFR 1926 (federal OSHA)` |
+| `contract_form`, `contract_periods` | `AS 4000-1997 with special conditions`; the contract's own notice and payment periods | `AIA A101/A201-2017 as amended` |
+
+## Knowledge packs
+
+`--country` at registration picks the pack (`knowledge/<country>/` in the plugin, overlaid by the owner's
+`~/.claude/pm-agent/knowledge/<country>/`). `python scripts/kb_resolve.py` shows which pack and regional
+files apply and which are missing; `kb_resolve.py --terms` prints the merged terminology. The pack layout
+and how to add a country are in `knowledge/README.md` at the plugin root.
 
 Document names in `required_documents` are the keys of `documents`, plus `drawing_set`,
 `register`, `program` and `budget`, which the scanner supplies itself.
@@ -99,5 +139,6 @@ The matrix sheet needs a header row with a `Status` column and a numeric item nu
 ```
 python scripts/guard.py                 # the boundary as the PM sees it
 python scripts/test_guard.py            # fixture refusals + this project's scope_tests
+python scripts/kb_resolve.py           # the knowledge pack and regional files, and what is missing
 python scripts/scan_state.py --dry-run  # what the scan would record, written nowhere
 ```

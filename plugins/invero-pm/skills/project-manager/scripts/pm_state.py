@@ -237,12 +237,23 @@ def consume_answers() -> list[dict]:
 
 
 def make_waiting(item_id: str, wtype: str, text: str, needed_from: str,
-                 raised: str | None = None) -> dict:
-    """wtype: approval | missing_input | question | external | email"""
-    return {
+                 raised: str | None = None, due: str | None = None) -> dict:
+    """wtype: statutory | approval | missing_input | question | external | email
+
+    A statutory item is a deadline set by law or by the contract - a payment schedule, a payment
+    or lien notice, a time-bar. Give it `due` (ISO date). It sorts above everything else on the
+    dashboard and survives rescans until resolved, because a missed statutory date cannot be
+    recovered.
+    """
+    item = {
         "id": item_id, "type": wtype, "text": text,
         "needed_from": needed_from, "raised": raised or now_iso()[:10],
     }
+    if due:
+        item["due"] = due
+    elif wtype == "statutory":
+        raise ValueError("a statutory waiting-on item needs a due date")
+    return item
 
 
 def set_step(entry: dict, step: str, status: str, detail: str | None = None) -> None:

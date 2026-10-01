@@ -10,8 +10,8 @@
     {
       "name": "invero-pm",
       "source": "./plugins/invero-pm",
-      "description": "Project Manager agent for construction and fit-out projects — drawing intake, clarifications registers, documentation health, programme and cost, live dashboard and owner sign-offs.",
-      "version": "3.0.0",
+      "description": "Project Manager agent and specialist team for construction and fit-out projects in any country — drawing intake, registers, programme and cost, claims, tenders, scope, health checks, site reports, code compliance, live dashboard and owner sign-offs, adapted to the project's jurisdiction.",
+      "version": "4.0.0",
       "category": "productivity"
     }
   ]

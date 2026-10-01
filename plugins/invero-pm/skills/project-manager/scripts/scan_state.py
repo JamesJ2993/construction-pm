@@ -597,7 +597,7 @@ def merge(prev: dict, fresh: dict) -> dict:
         if w["id"] in merged:
             if w.get("type") == "external" or w.get("expected"):
                 merged[w["id"]] = {**merged[w["id"]], **w}
-        elif w.get("type") in ("approval", "external"):
+        elif w.get("type") in ("approval", "external", "statutory"):
             merged[w["id"]] = w
     fresh["waiting_on"] = [w for w in merged.values() if w["id"] not in fresh["resolved"]]
     return fresh

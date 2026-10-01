@@ -1,0 +1,64 @@
+{
+  "_note": "Sources the currency watcher polls for the US pack. content_hash is set on each successful fetch; an empty hash means never fetched. The watcher writes its state to the user's overlay copy of this file, never to the shipped one. State sources are added as each state file is written.",
+  "schema_version": 1,
+  "sources": [
+    {
+      "id": "icc-adoption",
+      "name": "ICC code adoption information",
+      "url": "https://www.iccsafe.org/about/overview/international-code-adoptions/",
+      "cadence": "monthly",
+      "catches": "A state adopting a new I-Code edition.",
+      "licence": "own-words",
+      "applies_to": [
+        "all"
+      ],
+      "content_hash": "",
+      "last_checked": null
+    },
+    {
+      "id": "osha-1926",
+      "name": "29 CFR Part 1926 (eCFR)",
+      "url": "https://www.ecfr.gov/current/title-29/subtitle-B/chapter-XVII/part-1926",
+      "cadence": "monthly",
+      "catches": "Amendments to the federal construction safety standards.",
+      "licence": "public-domain",
+      "applies_to": [
+        "all"
+      ],
+      "content_hash": "",
+      "last_checked": null
+    },
+    {
+      "id": "osha-state-plans",
+      "name": "OSHA State Plans",
+      "url": "https://www.osha.gov/stateplans",
+      "cadence": "monthly",
+      "catches": "A State Plan added, withdrawn or changing its coverage of private construction.",
+      "licence": "public-domain",
+      "applies_to": [
+        "all"
+      ],
+      "content_hash": "",
+      "last_checked": null
+    },
+    {
+      "id": "ada-standards",
+      "name": "DOJ - ADA design standards",
+      "url": "https://www.ada.gov/law-and-regs/design-standards/",
+      "cadence": "monthly",
+      "catches": "Changes to the federal accessibility design standards.",
+      "licence": "public-domain",
+      "applies_to": [
+        "all"
+      ],
+      "content_hash": "",
+      "last_checked": null
+    }
+  ],
+  "not_monitored": [
+    {
+      "what": "The text of the I-Codes, NFPA codes and referenced standards",
+      "why": "Copyrighted. Only adoption status is monitored; wording comes from the adopted code at the time it is needed."
+    }
+  ]
+}

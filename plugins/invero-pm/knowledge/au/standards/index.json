@@ -1,0 +1,1824 @@
+{
+  "_note": "Pointers and paraphrase only. Never clause text - Standards Australia licenses any extract, including a single sentence or figure. See README.md. Enforced by kb-lint.py.",
+  "verified": "2026-08-21",
+  "confidence": "high",
+  "licence": "own-words",
+  "ncc_schedule_2_provenance": {
+    "_note": "Provenance for the ncc_2025_schedule_2 key on each standard below. It covers ONLY that key. Every other field in this file keeps the file-level verified date and confidence above.",
+    "edition": "NCC 2025",
+    "source": [
+      "NCC 2025 Volume One (ABCB, ncc.abcb.gov.au) - Schedule 2 Referenced documents, national Table 1, printed pages 652-669; NSW Table 1, printed pages 755-762; VIC Table 1, printed pages 911-922",
+      "NCC 2025 Volume Three (ABCB, ncc.abcb.gov.au) - Schedule 2 Referenced documents, national Table 1, printed pages 200-217; NSW Table 1, printed pages 254-257; VIC Table 1, printed pages 355-361"
+    ],
+    "verified": "2026-09-16",
+    "confidence": "verified",
+    "licence": "CC-BY-4.0",
+    "attribution": "National Construction Code 2025 (c) Commonwealth of Australia and the States and Territories of Australia 2025, published by the Australian Building Codes Board, licensed under CC BY 4.0.",
+    "licence_note": "Only bibliographic facts are reproduced from Schedule 2 under CC BY 4.0 - document number and date as printed, the amendment parenthetical as printed, table note markers, and clause identifiers. No AS/NZS content is reproduced. The rest of this file, including every requires_in_own_words paraphrase, remains own-words and is not NCC-derived.",
+    "national_table_copies": "The national Table 1 was extracted from both volumes and the two copies are identical row for row (188 extracted rows, including the repeated column headers and the table notes). The Volume One copy is the one recorded here.",
+    "state_table_copies": "The NSW and VIC state tables were also extracted from both volumes and each jurisdiction's two copies are identical row for row. NSW Table 1 has 17 extracted rows and no Volume Three column; VIC Table 1 has 57 extracted rows and does carry a Volume Three column.",
+    "conventions": {
+      "called_up_by": "Clause identifiers exactly as printed in that volume's column, as a list. A cell printed 'N/A' is recorded as an empty list.",
+      "number_forms": "The national table prints part-numbered standards as 'AS 1428 Part 1' and sometimes breaks 'Part' from its number across lines; the state tables print the dotted form 'AS 1428.1'. Both forms were searched for every standard.",
+      "state_tables": "Keyed by jurisdiction. 'listed' carries the entry as printed in that state's table; 'not-listed' means the jurisdiction's table was read in full and the standard is absent; 'not-read' means that jurisdiction's table was not opened this run. A state entry is never merged into the national entry.",
+      "state_search_method": "For each standard the VIC and NSW tables were searched in full - every row number compared, in both the dotted and 'Part n' forms."
+    },
+    "jurisdictions_read": [
+      "VIC",
+      "NSW"
+    ],
+    "jurisdictions_not_read": [
+      "NT",
+      "QLD",
+      "SA",
+      "TAS",
+      "WA"
+    ],
+    "scope_note": "This records what Schedule 2 calls up. It does not record whether a standard applies to a given building - that turns on the clause, the classification and the jurisdiction."
+  },
+  "standards": [
+    {
+      "number": "AS 1428.1",
+      "title": "Design for access and mobility - General requirements for access - New building work",
+      "year": "2021",
+      "discipline": "architectural",
+      "governs": "Accessible design - circulation space, doorways, ramps, grabrails, sanitary facilities",
+      "ncc_hook": "Section D access and egress; called up for accessible paths of travel and facilities",
+      "requires_in_own_words": "Minimum dimensions and clearances for accessible circulation, door approach and latch-side clearances, ramp gradients and landings, and the layout of accessible sanitary compartments.",
+      "pm_trigger": "Any change to shopfront threshold, door widths, queuing rails, counter heights, or accessible WC layout. Also whenever a set marks DDA circulation - check the circles actually fit the built layout, not the drawn one.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 1428 Part 1",
+        "entries": [
+          {
+            "no_as_printed": "AS 1428 Part 1",
+            "date": "2021",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "D3D11",
+                "D3D16",
+                "D3D22",
+                "D4D2",
+                "D4D3",
+                "D4D4",
+                "D4D7",
+                "D4D10",
+                "D4D11",
+                "D4D13",
+                "Spec 16",
+                "E3D10",
+                "F4D5",
+                "G4D5",
+                "Schedule 1"
+              ],
+              "volume_two": [
+                "Schedule 1"
+              ],
+              "housing_provisions": [
+                "Schedule 1"
+              ],
+              "volume_three": [
+                "Schedule 1",
+                "E1D2"
+              ]
+            }
+          },
+          {
+            "no_as_printed": "AS 1428 Part 1",
+            "date": "2001",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "I2D7",
+                "I2D8",
+                "I2D10",
+                "I2D15"
+              ],
+              "volume_two": [],
+              "housing_provisions": [],
+              "volume_three": [
+                "E1D2"
+              ]
+            }
+          },
+          {
+            "no_as_printed": "AS 1428 Part 1 (Supplement 1)",
+            "date": "1993",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "I2D2"
+              ],
+              "volume_two": [],
+              "housing_provisions": [],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "listed",
+            "entry": {
+              "no_as_printed": "AS 1428.1",
+              "date": "2021",
+              "amendments": null,
+              "called_up_by": {
+                "volume_one": [
+                  "VIC F4D2"
+                ],
+                "volume_two": [],
+                "housing_provisions": [],
+                "volume_three": []
+              }
+            }
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Schedule 2 lists this standard three times. The 2021 edition carries the general access clauses; a 2001 edition is retained against the Volume One Part I2 clauses; and a 1993 Supplement 1 (the Commentary) sits against I2D2. The index's single 'year' of 2021 records the principal edition only and does not show the other two."
+      }
+    },
+    {
+      "number": "AS 1428.4.1",
+      "title": "Design for access and mobility - Means to assist the orientation of people with vision impairment - Tactile ground surface indicators",
+      "year": "2009",
+      "discipline": "architectural",
+      "governs": "Tactile ground surface indicators - where they go and how they are set out",
+      "ncc_hook": "Section D, accessible path of travel provisions",
+      "requires_in_own_words": "Placement, extent and luminance contrast of warning and directional tactile indicators at stairs, ramps and hazards.",
+      "pm_trigger": "Any level change, stair or ramp inside the tenancy, and at the lease line where the tenancy meets a mall walkway.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS/NZS 1428 Part 4.1",
+        "entries": [
+          {
+            "no_as_printed": "AS/NZS 1428 Part 4.1",
+            "date": "2009",
+            "amendments": "incorporating amendments 1 and 2",
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "D4D9"
+              ],
+              "volume_two": [],
+              "housing_provisions": [],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Schedule 2 prints this document as 'AS/NZS 1428 Part 4.1', a joint Australian/New Zealand standard; the index records it as 'AS 1428.4.1'. The date 2009 agrees. The number prefix in the index does not match what Schedule 2 prints."
+      }
+    },
+    {
+      "number": "AS/NZS 3000",
+      "title": "Electrical installations (Wiring Rules)",
+      "year": "2018",
+      "discipline": "electrical",
+      "governs": "Electrical installation design, protection, earthing and testing",
+      "ncc_hook": "Section J and Part E; the electrical installation is required to comply",
+      "requires_in_own_words": "How circuits are protected, separated, earthed and tested, and what must be verified before an installation is energised.",
+      "pm_trigger": "Switchboard upgrades, new submains from the landlord board, RCD provision, and the electrical certificate of compliance at handover.",
+      "ncc_2025_schedule_2": {
+        "status": "not-listed",
+        "searched": "National Table 1 searched for 'AS/NZS 3000', 'AS 3000' and the bare string '3000', in the dotted form and in the table's 'AS/NZS 3000 Part n' form, tolerating a line break between 'Part' and its number. No row returned; the sequence runs AS/NZS 2918, AS/NZS 3013, AS/NZS 3500 Part 0.",
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "listed",
+            "entry": {
+              "no_as_printed": "AS/NZS 3000",
+              "date": "2018",
+              "amendments": "incorporating amendments 1, 2 and 3",
+              "called_up_by": {
+                "volume_one": [
+                  "NSW I5D14"
+                ],
+                "volume_two": [],
+                "housing_provisions": []
+              }
+            }
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Schedule 2's national table does not reference AS/NZS 3000 at all. It appears only in the NSW state table (2018, at NSW I5D14). The index's ncc_hook, which says Section J and Part E require the electrical installation to comply, is not supported by the national Schedule 2 list and should be re-examined."
+      }
+    },
+    {
+      "number": "AS/NZS 3008.1.1",
+      "title": "Electrical installations - Selection of cables",
+      "year": "2017",
+      "discipline": "electrical",
+      "governs": "Cable sizing for current capacity, voltage drop and fault conditions",
+      "ncc_hook": "Via AS/NZS 3000",
+      "requires_in_own_words": "Method for selecting conductor size against load, installation conditions, run length and permitted voltage drop.",
+      "pm_trigger": "Long submain runs from a remote landlord board - voltage drop is the usual reason a submain has to grow after tender.",
+      "ncc_2025_schedule_2": {
+        "status": "not-listed",
+        "searched": "National Table 1 searched for 'AS/NZS 3008', 'AS 3008', '3008.1.1', '3008 Part 1.1' and the bare string '3008', tolerating a line break after 'Part'. No row returned.",
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Not a national Schedule 2 referenced document. The index's ncc_hook routes it 'via AS/NZS 3000', which is itself not in the national table - so on Schedule 2 alone there is no national NCC route to this standard."
+      }
+    },
+    {
+      "number": "AS 1668.1",
+      "title": "The use of ventilation and airconditioning in buildings - Fire and smoke control in buildings",
+      "year": "2015",
+      "discipline": "mechanical",
+      "governs": "Fire and smoke control through air handling systems",
+      "ncc_hook": "Section C opening protection and Section E smoke control; terminology aligned to this standard in NCC 2025",
+      "requires_in_own_words": "How air handling systems must behave in fire mode, including shutdown, smoke spill and the protection of openings where ductwork crosses fire-rated construction.",
+      "pm_trigger": "Any duct penetration of a fire-rated tenancy wall or slab, and any change to the base building smoke control strategy.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 1668 Part 1",
+        "entries": [
+          {
+            "no_as_printed": "AS 1668 Part 1",
+            "date": "2015",
+            "amendments": "incorporating amendment 1",
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "C3D13",
+                "C4D15",
+                "Spec 11",
+                "D2D12",
+                "Spec 19",
+                "E2D3",
+                "E2D4",
+                "E2D6",
+                "E2D7",
+                "E2D8",
+                "E2D9",
+                "E2D11",
+                "E2D12",
+                "E2D13",
+                "E2D16",
+                "E2D17",
+                "E2D19",
+                "F6D12",
+                "Spec 21",
+                "Spec 31"
+              ],
+              "volume_two": [],
+              "housing_provisions": [],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "listed",
+            "entry": {
+              "no_as_printed": "AS 1668.1",
+              "date": "2015",
+              "amendments": "incorporating amendment 1",
+              "called_up_by": {
+                "volume_one": [],
+                "volume_two": [],
+                "housing_provisions": [],
+                "volume_three": [
+                  "VIC E2D2"
+                ]
+              }
+            }
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS 1668.2",
+      "title": "The use of ventilation and airconditioning in buildings - Mechanical ventilation in buildings",
+      "year": "2012",
+      "discipline": "mechanical",
+      "governs": "Mechanical ventilation rates and outdoor air provision",
+      "ncc_hook": "Section F health and amenity - ventilation of occupied spaces",
+      "requires_in_own_words": "Required outdoor air quantities by occupancy type, and exhaust provisions for specific rooms such as sanitary compartments and kitchens.",
+      "pm_trigger": "Occupancy count changes, a food or beverage offer being added, or a back-of-house room being repurposed. Ventilation rate is driven by use, so a use change is a ventilation change.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 1668 Part 2",
+        "entries": [
+          {
+            "no_as_printed": "AS 1668 Part 2",
+            "date": "2024",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "E2D12",
+                "F6V1",
+                "F6D6",
+                "F6D11",
+                "F6D12",
+                "F8D4",
+                "J6D4"
+              ],
+              "volume_two": [
+                "H4V3",
+                "H4D7"
+              ],
+              "housing_provisions": [
+                "10.8.2"
+              ],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "listed",
+            "entry": {
+              "no_as_printed": "AS 1668.2",
+              "date": "2024",
+              "amendments": null,
+              "called_up_by": {
+                "volume_one": [],
+                "volume_two": [],
+                "housing_provisions": [],
+                "volume_three": [
+                  "VIC E2D2"
+                ]
+              }
+            }
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Schedule 2 lists the 2024 edition; the index's 'year' records 2012. The referenced edition is 2024."
+      }
+    },
+    {
+      "number": "AS 1670.1",
+      "title": "Fire detection, warning, control and intercom systems - System design, installation and commissioning - Fire",
+      "year": "2018",
+      "discipline": "fire",
+      "governs": "Detection and alarm system design and commissioning",
+      "ncc_hook": "Section E fire services",
+      "requires_in_own_words": "Detector spacing and siting, control equipment, and the commissioning evidence required before a system is accepted.",
+      "pm_trigger": "Ceiling changes, new bulkheads, or high joinery that obstructs a detector. Detection almost always moves when a ceiling does.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 1670 Part 1",
+        "entries": [
+          {
+            "no_as_printed": "AS 1670 Part 1",
+            "date": "2024",
+            "amendments": null,
+            "note_marker": "See Note 5",
+            "called_up_by": {
+              "volume_one": [
+                "C4D6",
+                "C4D7",
+                "C4D8",
+                "C4D9",
+                "C4D12",
+                "D3D26",
+                "E2D3",
+                "E2D10",
+                "G4D7",
+                "Spec 12",
+                "Spec 20",
+                "Spec 23",
+                "Spec 31"
+              ],
+              "volume_two": [],
+              "housing_provisions": [
+                "9.5.1"
+              ],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Schedule 2 lists the 2024 edition; the index's 'year' records 2018. The referenced edition is 2024."
+      }
+    },
+    {
+      "number": "AS 2118.1",
+      "title": "Automatic fire sprinkler systems - General requirements",
+      "year": "2017",
+      "discipline": "fire",
+      "governs": "Sprinkler system design, coverage and water supply",
+      "ncc_hook": "Section E fire services; carpark provisions tightened in NCC 2025",
+      "requires_in_own_words": "Sprinkler spacing, obstruction rules, hazard classification and the water supply the system must be provided with.",
+      "pm_trigger": "Every ceiling or bulkhead change, and any joinery unit tall enough to obstruct a head. Obstruction rules are the ones most often missed at tender.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 2118 Part 1",
+        "entries": [
+          {
+            "no_as_printed": "AS 2118 Part 1",
+            "date": "2017",
+            "amendments": "incorporating amendments 1 and 2",
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "C1V3",
+                "Spec 17",
+                "Spec 18"
+              ],
+              "volume_two": [],
+              "housing_provisions": [],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS 2419.1",
+      "title": "Fire hydrant installations - System design, installation and commissioning",
+      "year": "2021",
+      "discipline": "fire",
+      "governs": "Hydrant coverage, pressure and flow",
+      "ncc_hook": "Section E fire services",
+      "requires_in_own_words": "Where hydrants must be located to achieve coverage, and the pressure and flow the system must deliver.",
+      "pm_trigger": "Usually base building, but confirm tenancy works have not blocked hydrant access or a booster.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 2419 Part 1",
+        "entries": [
+          {
+            "no_as_printed": "AS 2419 Part 1",
+            "date": "2021",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "C3D13",
+                "E1D2",
+                "Spec 18",
+                "I3D9"
+              ],
+              "volume_two": [],
+              "housing_provisions": [],
+              "volume_three": [
+                "B4D4"
+              ]
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS 2441",
+      "title": "Installation of fire hose reels",
+      "year": "2005",
+      "discipline": "fire",
+      "governs": "Fire hose reel location and coverage",
+      "ncc_hook": "Section E fire services",
+      "requires_in_own_words": "Reel siting so that coverage reaches the required area, and clearances that keep the reel usable.",
+      "pm_trigger": "Joinery or stock shelving placed in front of a reel. A common defect at handover.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 2441",
+        "entries": [
+          {
+            "no_as_printed": "AS 2441",
+            "date": "2005",
+            "amendments": "incorporating amendment 1",
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "E1D3"
+              ],
+              "volume_two": [],
+              "housing_provisions": [],
+              "volume_three": [
+                "B4D5"
+              ]
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS 1851",
+      "title": "Routine service of fire protection systems and equipment",
+      "year": "2012",
+      "discipline": "fire",
+      "governs": "Ongoing inspection, testing and maintenance of fire systems",
+      "ncc_hook": "Not an NCC design reference - it governs the maintenance regime after handover",
+      "requires_in_own_words": "Routine service schedules and records for each class of fire protection equipment.",
+      "pm_trigger": "Handover. The fire safety measures schedule and the AFSS depend on the maintenance regime being set up, and this is the standard the baseline is set against.",
+      "ncc_2025_schedule_2": {
+        "status": "not-listed",
+        "searched": "National Table 1 searched for 'AS 1851', 'AS/NZS 1851' and the bare string '1851'. No row returned; the sequence runs AS 1860 Part 2 next. Listed in VIC Table 1 - see state_tables.",
+        "state_tables": {
+          "VIC": {
+            "status": "listed",
+            "entry": {
+              "no_as_printed": "AS 1851",
+              "date": "2012",
+              "amendments": "incorporating amendment 1",
+              "called_up_by": {
+                "volume_one": [],
+                "volume_two": [],
+                "housing_provisions": [],
+                "volume_three": [
+                  "VIC B4D2"
+                ]
+              }
+            }
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Consistent with the index's ncc_hook, this is not a national Schedule 2 referenced document. It is, however, referenced in the Victorian state table (2012, at VIC B4D2 in Volume Three), so in Victoria it is a Code reference and not only a post-handover maintenance standard."
+      }
+    },
+    {
+      "number": "AS 1530.1",
+      "title": "Methods for fire tests on building materials, components and structures - Combustibility test for materials",
+      "year": "1994",
+      "discipline": "architectural",
+      "governs": "Whether a material is deemed combustible",
+      "ncc_hook": "Section C fire hazard properties",
+      "requires_in_own_words": "The test by which a material is classified as combustible or not.",
+      "pm_trigger": "Material substitutions during construction. A substitution that looks like a finish change can be a compliance change.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 1530 Part 1",
+        "entries": [
+          {
+            "no_as_printed": "AS 1530 Part 1",
+            "date": "2024",
+            "amendments": null,
+            "note_marker": "See Note 2",
+            "called_up_by": {
+              "volume_one": [
+                "A5G6",
+                "Schedule 1"
+              ],
+              "volume_two": [
+                "A5G6",
+                "Schedule 1"
+              ],
+              "housing_provisions": [
+                "Schedule 1"
+              ],
+              "volume_three": [
+                "A5G6",
+                "Schedule 1"
+              ]
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Schedule 2 lists the 2024 edition; the index's 'year' records 1994. A table note preserves the standing of reports based on the 1994 edition issued before the 2024 edition was referenced. The referenced edition is 2024."
+      }
+    },
+    {
+      "number": "AS 1530.3",
+      "title": "Methods for fire tests on building materials, components and structures - Simultaneous determination of ignitability, flame propagation, heat release and smoke release",
+      "year": "1999",
+      "discipline": "architectural",
+      "governs": "Fire hazard indices for linings and finishes",
+      "ncc_hook": "Section C fire hazard properties of wall and ceiling linings",
+      "requires_in_own_words": "The test producing the indices used to judge whether a lining or finish is acceptable in a given location.",
+      "pm_trigger": "Wall and ceiling lining selections, and any decorative finish. NCC 2025 requires testing by an Accredited Testing Laboratory - check the certificate names one.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS/NZS 1530 Part 3",
+        "entries": [
+          {
+            "no_as_printed": "AS/NZS 1530 Part 3",
+            "date": "1999",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "A5G6",
+                "Schedule 1",
+                "Spec 3"
+              ],
+              "volume_two": [
+                "A5G6",
+                "Schedule 1",
+                "Spec 3"
+              ],
+              "housing_provisions": [
+                "Schedule 1"
+              ],
+              "volume_three": [
+                "A5G6",
+                "Schedule 1",
+                "Spec 3"
+              ]
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Schedule 2 prints this document as 'AS/NZS 1530 Part 3', a joint standard; the index records it as 'AS 1530.3'. The date 1999 agrees. The number prefix in the index does not match what Schedule 2 prints."
+      }
+    },
+    {
+      "number": "AS 1530.4",
+      "title": "Methods for fire tests on building materials, components and structures - Fire-resistance tests for elements of construction",
+      "year": "2014",
+      "discipline": "fire",
+      "governs": "Fire resistance levels of construction elements",
+      "ncc_hook": "Section C fire resistance",
+      "requires_in_own_words": "How an element is tested to establish the FRL it can be claimed to achieve.",
+      "pm_trigger": "Every penetration of a fire-rated element. The penetration seal must have a tested system that matches the actual substrate and service - a generic product datasheet is not evidence.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 1530 Part 4",
+        "entries": [
+          {
+            "no_as_printed": "AS 1530 Part 4",
+            "date": "2014",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "C4D15",
+                "C4D16",
+                "Spec 9",
+                "Spec 10",
+                "Spec 13",
+                "Spec 14",
+                "Schedule 1",
+                "Spec 3"
+              ],
+              "volume_two": [
+                "9.3.2",
+                "Schedule 1",
+                "Spec 3"
+              ],
+              "housing_provisions": [
+                "Schedule 1"
+              ],
+              "volume_three": [
+                "Schedule 1",
+                "Spec 3"
+              ]
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS 1288",
+      "title": "Glass in buildings - Selection and installation",
+      "year": "2021",
+      "discipline": "architectural",
+      "governs": "Glass type, thickness and safety glazing requirements",
+      "ncc_hook": "Section B and Section D - glazing in and near doors and in accessible paths",
+      "requires_in_own_words": "Where safety glazing is required, how glass thickness is selected for wind and imposed loads, and marking requirements.",
+      "pm_trigger": "Shopfront glazing, glass doors, mirrors and any full-height glazed partition. Also manifestation on frameless glass in a path of travel.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 1288",
+        "entries": [
+          {
+            "no_as_printed": "AS 1288",
+            "date": "2021",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "B1D4",
+                "Spec 11",
+                "Spec 12"
+              ],
+              "volume_two": [
+                "H1D8"
+              ],
+              "housing_provisions": [
+                "8.3.1"
+              ],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS 2047",
+      "title": "Windows and external glazed doors in buildings",
+      "year": "2014",
+      "discipline": "architectural",
+      "governs": "Performance of external window and door assemblies",
+      "ncc_hook": "Section B structural and Section F weatherproofing",
+      "requires_in_own_words": "Water penetration, air infiltration and structural performance requirements for external glazed assemblies, and how they are labelled.",
+      "pm_trigger": "External shopfronts on a street frontage rather than an internal mall.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 2047",
+        "entries": [
+          {
+            "no_as_printed": "AS 2047",
+            "date": "2014",
+            "amendments": "incorporating amendments 1 and 2",
+            "note_marker": "See Note 6",
+            "called_up_by": {
+              "volume_one": [
+                "B1D4",
+                "F1V1",
+                "F1D14",
+                "J5D5"
+              ],
+              "volume_two": [
+                "H1D8",
+                "H2V1"
+              ],
+              "housing_provisions": [
+                "13.4.4"
+              ],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS/NZS 3500.1",
+      "title": "Plumbing and drainage - Water services",
+      "year": "2021",
+      "discipline": "hydraulic",
+      "governs": "Cold and heated water service design",
+      "ncc_hook": "NCC Volume Three (PCA)",
+      "requires_in_own_words": "Pipe sizing, materials, backflow prevention and testing of water services.",
+      "pm_trigger": "New wet areas, a coffee or food offer, or a tenancy tap-in to the landlord water service. Backflow prevention is the item most often left out of a tenancy scope.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS/NZS 3500 Part 1",
+        "entries": [
+          {
+            "no_as_printed": "AS/NZS 3500 Part 1",
+            "date": "2018",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [],
+              "volume_two": [],
+              "housing_provisions": [],
+              "volume_three": [
+                "B5D6"
+              ]
+            }
+          },
+          {
+            "no_as_printed": "AS/NZS 3500 Part 1",
+            "date": "2025",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [],
+              "volume_two": [],
+              "housing_provisions": [],
+              "volume_three": [
+                "B1D3",
+                "B1D5",
+                "B1D6",
+                "B3D3",
+                "B5V1",
+                "B5D2",
+                "B5D3",
+                "B5D4",
+                "B6D2",
+                "B6D3",
+                "B6D5",
+                "B6D6",
+                "B7D3",
+                "B7D6",
+                "B7D7"
+              ]
+            },
+            "transcription_note": "The Volume Three cell is printed with a stray empty item between B5D4 and B6D2 in the source PDF; the clause list here omits the empty item and changes nothing else."
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "listed",
+            "entry": {
+              "no_as_printed": "AS/NZS 3500.1",
+              "date": "2025",
+              "amendments": null,
+              "called_up_by": {
+                "volume_one": [],
+                "volume_two": [],
+                "housing_provisions": [],
+                "volume_three": [
+                  "VIC B1D3",
+                  "VIC B3D3",
+                  "VIC B4D2",
+                  "VIC E2D2"
+                ]
+              }
+            }
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Schedule 2 lists this standard twice, and the index's 'year' of 2021 matches neither. The 2018 edition is referenced at Volume Three B5D6 only; the 2025 edition carries the remaining Volume Three clauses. Which edition governs depends on the clause being applied."
+      }
+    },
+    {
+      "number": "AS/NZS 3500.2",
+      "title": "Plumbing and drainage - Sanitary plumbing and drainage",
+      "year": "2021",
+      "discipline": "hydraulic",
+      "governs": "Sanitary drainage design and venting",
+      "ncc_hook": "NCC Volume Three (PCA)",
+      "requires_in_own_words": "Drain sizing, gradients, venting and fixture connection rules.",
+      "pm_trigger": "Relocating a WC or adding a sink. Falls to the existing stack are the usual constraint and often force a step or a pump.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS/NZS 3500 Part 2",
+        "entries": [
+          {
+            "no_as_printed": "AS/NZS 3500 Part 2",
+            "date": "2025",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "G1D5"
+              ],
+              "volume_two": [
+                "H2D2"
+              ],
+              "housing_provisions": [],
+              "volume_three": [
+                "C1D3",
+                "C1V1",
+                "C1V2",
+                "C2V2",
+                "C2V4",
+                "C2D3",
+                "C2D4",
+                "C3D7"
+              ]
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "listed",
+            "entry": {
+              "no_as_printed": "AS/NZS 3500.2",
+              "date": "2025",
+              "amendments": null,
+              "called_up_by": {
+                "volume_one": [],
+                "volume_two": [],
+                "housing_provisions": [],
+                "volume_three": [
+                  "VIC C2D4",
+                  "VIC C4P1",
+                  "VIC E2D2"
+                ]
+              }
+            }
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Schedule 2 lists the 2025 edition; the index's 'year' records 2021. The referenced edition is 2025."
+      }
+    },
+    {
+      "number": "AS 3740",
+      "title": "Waterproofing of domestic wet areas",
+      "year": "2021",
+      "discipline": "architectural",
+      "governs": "Wet area waterproofing extent and detailing",
+      "ncc_hook": "Section F health and amenity - Part F1 water management, restructured in NCC 2025",
+      "requires_in_own_words": "Where membranes are required, how far up walls they extend, and how junctions and penetrations are treated.",
+      "pm_trigger": "Any new wet area. Waterproofing is an inspection hold point and needs its certificate at handover.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 3740",
+        "entries": [
+          {
+            "no_as_printed": "AS 3740",
+            "date": "2021",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "F2D2"
+              ],
+              "volume_two": [
+                "H4D2",
+                "H4D3"
+              ],
+              "housing_provisions": [
+                "10.2.20"
+              ],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS 1657",
+      "title": "Fixed platforms, walkways, stairways and ladders - Design, construction and installation",
+      "year": "2018",
+      "discipline": "structural",
+      "governs": "Access to plant and elevated areas",
+      "ncc_hook": "Section D access and egress for non-public access ways",
+      "requires_in_own_words": "Dimensions, guarding and fall protection for maintenance access ways and platforms.",
+      "pm_trigger": "Roof plant access, mezzanine stock areas, and any ladder to a services platform.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 1657",
+        "entries": [
+          {
+            "no_as_printed": "AS 1657",
+            "date": "2018",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "D2D21",
+                "D2D22",
+                "D3D23",
+                "I1D6",
+                "I3D5"
+              ],
+              "volume_two": [],
+              "housing_provisions": [
+                "11.2.7",
+                "11.3.3",
+                "11.3.5"
+              ],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS 1735.12",
+      "title": "Lifts, escalators and moving walks - Facilities for persons with disabilities",
+      "year": "1999",
+      "discipline": "vertical-transport",
+      "governs": "Accessible lift provision",
+      "ncc_hook": "Section E3 lifts; contrast requirements amended in NCC 2025",
+      "requires_in_own_words": "Car dimensions, controls, signals and contrast requirements for an accessible lift.",
+      "pm_trigger": "Multi-level tenancies, and any tenancy relying on a lift as part of an accessible path.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 1735 Part 12",
+        "entries": [
+          {
+            "no_as_printed": "AS 1735 Part 12",
+            "date": "1999",
+            "amendments": "incorporating amendment 1",
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "E3D8",
+                "I2D6"
+              ],
+              "volume_two": [],
+              "housing_provisions": [],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS/NZS 1170.0",
+      "title": "Structural design actions - General principles",
+      "year": "2002",
+      "discipline": "structural",
+      "governs": "How design actions are combined",
+      "ncc_hook": "Section B structure",
+      "requires_in_own_words": "Load combinations and the general basis on which structural actions are determined.",
+      "pm_trigger": "Any new load on an existing slab or roof - plant, mezzanine, heavy joinery, feature ceiling.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS/NZS 1170 Part 0",
+        "entries": [
+          {
+            "no_as_printed": "AS/NZS 1170 Part 0",
+            "date": "2002",
+            "amendments": "incorporating amendments 1, 3 and 4",
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "B1V1",
+                "B1D2",
+                "Spec 4"
+              ],
+              "volume_two": [
+                "H1V1",
+                "H1D7"
+              ],
+              "housing_provisions": [
+                "2.2.2"
+              ],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS/NZS 1170.1",
+      "title": "Structural design actions - Permanent, imposed and other actions",
+      "year": "2002",
+      "discipline": "structural",
+      "governs": "Dead and live loads",
+      "ncc_hook": "Section B structure",
+      "requires_in_own_words": "Imposed load values by occupancy type and how permanent actions are established.",
+      "pm_trigger": "Confirming the existing slab capacity before adding stock storage, safes, plant or a mezzanine.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS/NZS 1170 Part 1",
+        "entries": [
+          {
+            "no_as_printed": "AS/NZS 1170 Part 1",
+            "date": "2002",
+            "amendments": "incorporating amendments 1 and 2",
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "B1D3"
+              ],
+              "volume_two": [],
+              "housing_provisions": [
+                "2.2.3",
+                "2.2.4",
+                "8.3.1",
+                "11.2.2",
+                "11.2.3",
+                "11.3.4"
+              ],
+              "volume_three": []
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS 3600",
+      "title": "Concrete structures",
+      "year": "2018",
+      "discipline": "structural",
+      "governs": "Design of concrete elements",
+      "ncc_hook": "Section B structure",
+      "requires_in_own_words": "Design and detailing rules for reinforced and prestressed concrete.",
+      "pm_trigger": "Core drilling and slab penetrations. A scan before drilling is not optional in a post-tensioned slab, and cutting a tendon is a structural failure, not a defect.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 3600",
+        "entries": [
+          {
+            "no_as_printed": "AS 3600",
+            "date": "2018",
+            "amendments": "incorporating amendments 1 and 2",
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "B1D4",
+                "Spec 1",
+                "F1D5"
+              ],
+              "volume_two": [
+                "H1D4",
+                "Spec 1"
+              ],
+              "housing_provisions": [
+                "3.4.2",
+                "4.2.6",
+                "4.2.10",
+                "4.2.13",
+                "5.3.3",
+                "10.2.9"
+              ],
+              "volume_three": [
+                "Spec 1"
+              ]
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS 4100",
+      "title": "Steel structures",
+      "year": "2020",
+      "discipline": "structural",
+      "governs": "Design of steel elements",
+      "ncc_hook": "Section B structure",
+      "requires_in_own_words": "Design and connection rules for structural steelwork.",
+      "pm_trigger": "Shopfront portal frames, mezzanine framing, and any new steel supporting suspended plant.",
+      "ncc_2025_schedule_2": {
+        "status": "listed",
+        "printed_as": "AS 4100",
+        "entries": [
+          {
+            "no_as_printed": "AS 4100",
+            "date": "2020",
+            "amendments": null,
+            "note_marker": null,
+            "called_up_by": {
+              "volume_one": [
+                "B1D4",
+                "Spec 1"
+              ],
+              "volume_two": [
+                "H1D6",
+                "Spec 1"
+              ],
+              "housing_provisions": [
+                "4.2.13",
+                "5.6.7"
+              ],
+              "volume_three": [
+                "Spec 1"
+              ]
+            }
+          }
+        ],
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS/NZS 2107",
+      "title": "Acoustics - Recommended design sound levels and reverberation times for building interiors",
+      "year": "2016",
+      "discipline": "acoustic",
+      "governs": "Interior sound levels and reverberation",
+      "ncc_hook": "Not directly an NCC reference for Class 6 - usually a lease or client requirement",
+      "requires_in_own_words": "Recommended internal noise levels and reverberation times by space type.",
+      "pm_trigger": "Tenancy adjoining a residential use, plant noise to a neighbour, or a client brief that sets an acoustic target. Often a lease condition rather than a Code one.",
+      "ncc_2025_schedule_2": {
+        "status": "not-listed",
+        "searched": "National Table 1 searched for 'AS/NZS 2107', 'AS 2107' and the bare string '2107'. No row returned.",
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        }
+      }
+    },
+    {
+      "number": "AS/NZS 1680.1",
+      "title": "Interior and workplace lighting - General principles and recommendations",
+      "year": "2006",
+      "discipline": "electrical",
+      "governs": "Interior lighting design and illuminance",
+      "ncc_hook": "Related to Section J lighting provisions, which control power density and switching",
+      "requires_in_own_words": "Recommended illuminance and quality criteria for interior tasks and spaces.",
+      "pm_trigger": "Retail lighting design. Note the NCC controls lighting power density and control, while this standard addresses adequacy - a design can satisfy one and fail the other.",
+      "ncc_2025_schedule_2": {
+        "status": "not-listed",
+        "searched": "National Table 1 searched for 'AS/NZS 1680 Part 1', 'AS/NZS 1680.1', 'AS 1680.1' and the bare string '1680'. Only AS/NZS 1680 Part 0 (2009, Interior lighting - Safe movement, called up at F6D5 and Housing Provisions 10.5.2) is listed. Part 1 is not a Schedule 2 referenced document.",
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Part 1 is not a Schedule 2 referenced document; Part 0 (2009) is, at F6D5. The index's ncc_hook describes the relationship to Section J as indirect, which Schedule 2 supports, but the entry should not be read as a Code reference in its own right."
+      }
+    },
+    {
+      "number": "AS 4674",
+      "title": "Design, construction and fit-out of food premises",
+      "year": "2004",
+      "discipline": "architectural",
+      "governs": "Food premises surfaces, fixtures and fitout",
+      "ncc_hook": "Referenced alongside Section F and local health requirements",
+      "requires_in_own_words": "Surface finishes, coving, fixture clearances and cleanability requirements for food handling areas.",
+      "pm_trigger": "Any food or beverage offer in the tenancy. Council health approval is a separate approval from the building one and has its own lead time.",
+      "ncc_2025_schedule_2": {
+        "status": "not-listed",
+        "searched": "National Table 1 searched for 'AS 4674', 'AS/NZS 4674' and the bare string '4674'. No row returned; the sequence runs AS 4654 Part 2, AS 4678.",
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Not a Schedule 2 referenced document in any table read this run. The index's ncc_hook places it 'alongside' Section F and local health requirements, which Schedule 2 neither confirms nor contradicts - it is not an NCC reference."
+      }
+    },
+    {
+      "number": "AS 2890.1",
+      "title": "Parking facilities - Off-street car parking",
+      "year": "2004",
+      "discipline": "civil",
+      "governs": "Car park layout and access",
+      "ncc_hook": "Section D and the carpark provisions amended in NCC 2025",
+      "requires_in_own_words": "Bay dimensions, aisle widths, ramp gradients and headroom for off-street parking.",
+      "pm_trigger": "Rarely a tenancy matter, but relevant to loading dock access and delivery vehicle constraints during construction.",
+      "ncc_2025_schedule_2": {
+        "status": "not-listed",
+        "searched": "National Table 1 searched for 'AS 2890 Part 1', 'AS/NZS 2890 Part 1', 'AS 2890.1' and the bare string '2890', tolerating a line break after 'Part'. Only AS/NZS 2890 Part 6 (2009, off-street parking for people with disabilities, called up at D4D6) is listed. Part 1 is not a Schedule 2 referenced document.",
+        "state_tables": {
+          "VIC": {
+            "status": "not-listed"
+          },
+          "NSW": {
+            "status": "not-listed"
+          },
+          "NT": {
+            "status": "not-read"
+          },
+          "QLD": {
+            "status": "not-read"
+          },
+          "SA": {
+            "status": "not-read"
+          },
+          "TAS": {
+            "status": "not-read"
+          },
+          "WA": {
+            "status": "not-read"
+          }
+        },
+        "edition_note": "Part 1 is not a Schedule 2 referenced document; only AS/NZS 2890 Part 6 (2009) is, at D4D6. The index's ncc_hook, which points to Section D and the NCC 2025 carpark provisions, is not supported by Schedule 2 for Part 1 and should be re-examined."
+      }
+    }
+  ]
+}

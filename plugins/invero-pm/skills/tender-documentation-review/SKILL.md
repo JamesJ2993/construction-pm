@@ -96,7 +96,8 @@ render. Three checks find nearly everything:
   the same defect seen from both ends.
 
 State the corrected quantity and load, not just that the schedule is wrong — that is what gets
-priced. Check whether the erroneous figures also feed a compliance calculation (J7, NCC Section J);
+priced. Check whether the erroneous figures also feed a compliance calculation (an energy-code
+lighting or HVAC calculation — NCC Section J in Australia, the IECC or ASHRAE 90.1 in the US);
 a schedule error inside a calculation with a thin margin is a higher-priority finding than the
 schedule error itself.
 

@@ -1,0 +1,63 @@
+{
+  "_note": "Country defaults applied at project setup. Each can be overridden in the project's config.json.",
+  "country": "AU",
+  "name": "Australia",
+  "language": "en-AU",
+  "date_format": "DD/MM/YYYY",
+  "currency": "$",
+  "currency_code": "AUD",
+  "area_unit": "sqm",
+  "length_unit": "mm",
+  "building_code": "National Construction Code (NCC/BCA). The governing edition is the one in force when the building approval was applied for, with the State's variations - see codes/ncc/adoption-and-editions.md and codes/ncc/state-variations.md",
+  "standards_bodies": [
+    "Standards Australia (AS, AS/NZS)"
+  ],
+  "payment_law": "The security of payment Act of the State or Territory where the work is - see payment/README.md",
+  "safety_regime": "The model WHS laws in every jurisdiction except Victoria, which runs the OHS Act 2004 - see safety/README.md",
+  "contract_forms": [
+    "AS 4000-1997",
+    "AS 2124-1992",
+    "AS 4902-2000 (design and construct)",
+    "AS 11000-2023",
+    "ABIC MW/SW (architect-administered)"
+  ],
+  "regions": {
+    "nsw": "New South Wales",
+    "vic": "Victoria",
+    "qld": "Queensland",
+    "wa": "Western Australia",
+    "sa": "South Australia",
+    "tas": "Tasmania",
+    "act": "Australian Capital Territory",
+    "nt": "Northern Territory"
+  },
+  "regional_branches": [
+    "payment",
+    "safety",
+    "permitting"
+  ],
+  "expected_disciplines": [
+    "architectural",
+    "structural",
+    "mechanical",
+    "electrical",
+    "hydraulic",
+    "fire"
+  ],
+  "discipline_prefixes": {
+    "A": "architectural",
+    "S": "structural",
+    "M": "mechanical",
+    "E": "electrical",
+    "H": "hydraulic",
+    "F": "fire"
+  },
+  "licence_attribution": {
+    "CC-BY-4.0": {
+      "pattern": "The National Construction Code\\s+(\\d{4})\\s+was provided by the\\s+Australian Building Codes Board under the CC BY 4\\.0 licence",
+      "edition_group": 1,
+      "why": "NCC content may be reproduced under CC BY 4.0 only with the ABCB attribution, naming the edition the content is from."
+    }
+  },
+  "licence_note": "NCC/BCA is CC BY 4.0 and may be quoted with attribution. Australian Standards may not be quoted at all - Standards Australia licenses any extract."
+}
